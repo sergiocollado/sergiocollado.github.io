@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Mandelbrot</title>
+	<link rel="stylesheet" href="mystyles.css" type="text/css">
+	<script type= "text/javascript" src="chaos.js">
+	</script>
+	<script type="text/javascript" src="mandelbrot.js">
+	</script>
+	
+  </head>
+  <body >
+	
+    <div style="position relative"> 
+	<h1>The Mandelbrot Set</h1>
+  
+	<div>
+		<canvas id="canvas" style="position: absolute;">Canvas not supported; please update your browser.</canvas>
+	</div>
+	<div id="zoom" style=" background-color:rgba(255,0,0,0.25); width:0px; height:0px; position:absolute"></div>
+	
+	<p style="position:absolute;"> Controls:<br> Click and drag, for zoom <br> press <code> g </code> for gray scale <br> press <code> c </code> for random colors <br> press <code> i </code> for increase iterations <br> press <code> o </code> for decrease iterations <br> press <code> s </code> for zoom out.</p>
+	</div>
+
+
+  </body>
+</html>
