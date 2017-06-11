@@ -97,7 +97,7 @@ function sphere() {
     });
 	} catch(e) {
 	console.log("error: e " + e.ex );
-	}++
+	}
 };
 
 function DblHelix() {
@@ -251,146 +251,150 @@ a.blue { color: rgb(88,138,231)}
 </style>
 
 </head>
-<body style="font-family:sans-serif; font-size:20px; background-color: #EEEEEE; max-width:600px;  margin:auto;">
+<body style="font-family:sans-serif; font-size:20px; background-color: #EEEEEE;">
 <!-- background-color:#f0f0f0; -->
 <!-- background-color: rgb(255,255,245); -->
 <!-- https://www.w3schools.com/howto/default.asp -->
 <!-- https://www.w3schools.com/howto/howto_css_center_website.asp -->
 
-<header id="my_top_bar" class="top_bar blue-green-grad" style="height:4%; width:99%; 
-position: absolute;">
-<!--nothing -->
-</header>
+<div style="max-width:600px; margin:auto">
 	
-	
-<div id="myANIMATION" style="position:relative; float:left; width:275px; top:230px; background-color:rgb(88,138,231); padding:1em; padding-right:1em; border-radius:10%/10%; font-size:large; font-weight:bold; font-style:italic; color:#f0f0f0; border-style:solid; border-color:white; border-width:10px; background-image: linear-gradient(to bottom,rgb(88,138,255),rgb(221,243,255) 66%, rgb(88,138,255));-webkit-box-shadow: 6px 6px 5px #ccc;
--moz-box-shadow: 6px 6px 5px #ccc;box-shadow: 6px 6px 5px #ccc;">
 
-	<div class="tooltip" style="float:right; position:relative; top:20px">
-	<img src="Ser_icon.png" > 
-	<span class="tooltiptext"> Hi there! </span>
+	<header id="my_top_bar" class="top_bar blue-green-grad" style="height:4%; width:99%; 
+	position: absolute;">
+	<!--nothing -->
+	</header>
+
+
+	<div id="myANIMATION" style="position:relative; float:left; width:275px; top:230px; background-color:rgb(88,138,231); padding:1em; padding-right:1em; border-radius:10%/10%; font-size:large; font-weight:bold; font-style:italic; color:#f0f0f0; border-style:solid; border-color:white; border-width:10px; background-image: linear-gradient(to bottom,rgb(88,138,255),rgb(221,243,255) 66%, rgb(88,138,255));-webkit-box-shadow: 6px 6px 5px #ccc;
+	-moz-box-shadow: 6px 6px 5px #ccc;box-shadow: 6px 6px 5px #ccc;">
+
+		<div class="tooltip" style="float:right; position:relative; top:20px">
+		<img src="Ser_icon.png" > 
+		<span class="tooltiptext"> Hi there! </span>
+		</div>
+
+	<p > <span style="color:yellow">Hi there!</span> <br> I'm a nice guy who enjoys with 
+	<span onmouseover='Vcylinder()' style="color:rgb(255,128,0)" > maths </span>,  
+	<span onmouseover="Hcilinder()" style="color: rgb(168,242,57)">science</span>,
+	<span onmouseover="hring()" style="color:blue"> technology</span> and 
+	<span onmouseover="sphere()" style="color:yellow">engineering</span>.</p>
 	</div>
 
-<p > <span style="color:yellow">Hi there!</span> <br> I'm a nice guy who enjoys with 
-<span onmouseover='Vcylinder()' style="color:rgb(255,128,0)" > maths </span>,  
-<span onmouseover="Hcilinder()" style="color: rgb(168,242,57)">science</span>,
-<span onmouseover="hring()" style="color:blue"> technology</span> and 
-<span onmouseover="sphere()" style="color:yellow">engineering</span>.</p>
+
+	<div id="myANIMATION2" style="position:relative; float:left; width:275px; top:270px; left: 450; background-color:rgb(88,138,231); padding:1em; padding-right:1em; border-radius:10%/10%;font-family:Cambria, 'Hoefler Text', 'Nimbus Roman *No9 L Regular', Times, 'Times New Roman', serif; font-size:large; font-weight:bold; font-style:italic; color:rgb(88,138,255); border-style:solid; border-color:rgb(215,215,215); background-color:white; border-width:10px;-webkit-box-shadow: 6px 6px 5px #ccc;
+	-moz-box-shadow: 6px 6px 5px #ccc;box-shadow: 6px 6px 5px #ccc;">
+		Table of Contents
+	</div>
+
+
+	<div id="myOpacity" style="position:relative;"> 
+		<canvas  id="theCanvas" width="1400" height="900" style="position: absolute; left:100px; width:100%; top:30px">
+		Canvas not supported; please update your browser.
+		</canvas>
+	</div>	
+
+
+	<div class="centred" >
+	<ul class="weighted" style="font-size: 100%" id="weightTags">
+		<li><a href="sierpinski.html" class="green huge">Sierpinski</a></li>
+		<li><a href="Newton's_Cannon.html" class="purple huge" style="font-family:Cambria, 'Hoefler Text', 'Nimbus Roman *No9 L Regular', Times, 'Times New Roman', serif;">Newton's Cannon</a></li>
+		<li><a href="gosper.html" class="green small">Gosper</a></li>	
+		<li><a href="koch.html" class="blue large">Koch fractal</a></li>
+		<li><a href="koch_snowflake.html" class="blue medium">Koch snowflake</a></li>
+		<li><a href="bioengineering.html" class="red medium">Bioengineering</a></li>
+		<li><a href="iterative_functions.html" class="green medium">Iterative function <br> fractals</a></li>
+		<li><a href="tree.html" class="purple medium" >Fractal Tree</a></li>
+		<li><a href="leaf.html" class="red huge" style="font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', Georgia, serif;">Barnsley Fern</a></li>
+		<li><a href="DLA.html" class="blue medium">Difusion<br>Limited<br>Aggregation</a></li>
+		<li><a href="mandelbrot.html" class="blue huge" style="font-family:'Arial Black',sans-serif; font-style:italic;">Mandelbrot</a></li>
+		<li><a href="julia.html" class="purple huge" style="font-family: 'Lucida Grande','Lucida Sans Unicode', 'Lucida Sans','Liberation Sans', Verdana, sans-serif;">Julia sets</a></li>
+		<li><a href="lorenz.html" class="blue medium">Lorenz attractor</a></li>
+		<li><a href="hilbert.html" class="green small">Hilbert</a></li>
+		<!--<li><a href="doppler.html" class="green medium" style="font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', Georgia, serif; font-size:27px;">doppler<br>effect</a></li> -->
+		<!--<li><a href="optic_fiber.html" class="green medium" style="font-family: Constantia, 'Lucida Bright', serif; font-size:27px;">Optic<br>fiber</a></li> -->
+		<li><a href="Fourier.html" class="blue huge" style="font-family:'Arial Black',sans-serif; font-style:italic;">Fourier</a></li>
+		<li><a href="Matching_game.html" class="green medium">Matching <br> game</a></li>
+		<!--<li><a href="games.html" class="blue medium">Games</a></li>-->
+		<!-- 	<li><a href="#" class="blue small">DAB</a></li>
+		<li><a href="#" class="blue small">Reed Solomon</a></li>
+		<li><a href="#" class="blue large">Vittervi</a></li>
+		<li><a href="#" class="blue medium">Pseudorandom functions</a></li>
+		<li><a href="#" class="blue small">Voltage regulator circuits</a></li>
+		<li><a href="#" class="blue huge">Birthday paradox</a></li>
+		<li><a href="#" class="red medium">Basics of circuit simulation</a></li>
+		<li><a href="#" class="red small">Lernpacket kit</a></li>
+		<li><a href="#" class="red medium">Electrodynamics</a></li>
+		<li><a href="#" class="red small">Joule thief</a></li>
+		<li><a href="#" class="red large">DIY *****oscilloscope</a></li>
+		<li><a href="#" class="red medium">AM/FM radio kit</a></li>
+		<li><a href="#" class="red small">Earth magnentism</a></li>
+		<li><a href="#" class="red large">Tiny Tesla</a></li>
+		<li><a href="#" class="red medium">Robot Arm</a></li>
+		<li><a href="#" class="lightblue medium">Tetris game</a></li>
+		<li><a href="#" class="lightblue medium">Galaxy</a></li>
+		<li><a href="#" class="lightblue small">Face recognition system</a></li>
+		<li><a href="#" class="green large">Inverted pendulum</a></li>
+		<li><a href="#" class="green small">Steganography</a></li>
+		<li><a href="#" class="green medium">2D particle simulation</a></li>
+		<li><a href="#" class="green small">Game of life</a></li>
+		<li><a href="#" class="green huge">animal guessing <br> game</a></li>
+		<li><a href="#" class="green small">bridge building</a></li>
+		<li><a href="#" class="green medium">Sudoku</a></li>
+		<li><a href="#" class="purple small">Colective intelligence</a></li>
+		<li><a href="#" class="green huge"><span style="color: "green"; font-family: 'Lucida Console',Monaco,monospace>About Me</span></a></li>
+		<li><a href="#" class="purple medium">Maze</a></li>
+		<li><a href="#" class="purple huge"><span style="color: green; font-family: 'Lucida Console',Monaco,monospace">tag</span></a></li>
+		<li><a href="#" class="purple medium">Liquid simulation</a></li>
+		<li><a href="#" class="purple medium">VCOs</a></li>
+		<li><a href="#" class="purple medium">Tetris</a></li>
+		<li><a href="#" class="green small">Blender 3D Car</a></li>
+		<li><a href="#" class="green medium">Fractals</a></li>
+		<li><a href="#" class="purple huge">Computer Chess</a></li>
+		<li><a href="#" class="purple small">Strange attractors</a></li>
+		<li><a href="#" class="purple large"><span style="color: "green"; font-family: 'Lucida Console',Monaco,monospace>Console Emulator</span></a></li>
+		<li><a href="#" class="red large">LED Cube</a></li>
+		<li><a href="#" class="red medium">Computational aerodinamcs</a></li>
+		<li><a href="#" class="lightblue medium">Electric Gun</a></li>
+		<li><a href="#" class="green huge">Plasma simulation</a></li>
+		<li><a href="#" class="green small">Gingerman</a></li>
+		<li><a href="#" class="green medium">Bioengineering</a></li>
+		li><a href="#" class="green medium">Sudoku</a></li>
+		<li><a href="#" class="green small">Game of life</a></li>  
+		<li><a href="#" class= "" > Maze</a></li>-->
+	</ul>
+	</div>
+
+	<!-- 
+	<h2>Table of contents</h2>
+	<ul >
+		<li><a href="sierpinski.html" class="green ">Sierpinski</a></li>
+		<li><a href="Newton's_Cannon.html" class="purple" style="font-family:Cambria, 'Hoefler Text', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;">Newton's Cannon</a></li>
+		<li><a href="gosper.html" class="green">Gosper</a></li>	
+		<li><a href="koch.html" class="blue">Koch fractal</a></li>
+		<li><a href="koch_snowflake.html" class="blue ">Koch snowflake</a></li>
+		<li><a href="bioengineering.html" class="red">Bioengineering</a></li>
+		<li><a href="iterative_functions.html" class="green">Iterative function <br> fractals</a></li>
+		<li><a href="tree.html" class="purple" >Fractal Tree</a></li>
+		<li><a href="leaf.html" class="red" style="font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', Georgia, serif;">Barnsley Fern</a></li>
+		<li><a href="DLA.html" class="blue">Difusion<br>Limited<br>Aggregation</a></li>
+		<li><a href="mandelbrot.html" class="blue" style="font-family:'Arial Black',sans-serif; font-style:italic;">Mandelbrot</a></li>
+		<li><a href="julia.html" class="purple" style="font-family: 'Lucida Grande','Lucida Sans Unicode', 'Lucida Sans','Liberation Sans', Verdana, sans-serif;">Julia sets</a></li>
+		<li><a href="lorenz.html" class="blue">Lorenz attractor</a></li>
+		<li><a href="hilbert.html" class="green">Hilbert</a></li>
+		<li><a href="doppler.html" class="green" style="font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', Georgia, serif;">doppler<br>effect</a></li>
+		<li><a href="optic_fiber.html" class="green" style="font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', Georgia, serif;">Optic<br>fiber</a></li>
+		<li><a href="Fourier.html" class="blue" style="font-family:'Arial Black',sans-serif; font-style:italic;">Fourier</a></li>
+		<li><a href="Matching_game.html" class="green">Matching <br> game</a></li>
+		<li><a href="games/game01/game01.html" class="purple" >Me vs. Crabs</a></li> 
+	</ul>
+	-->
+
+	<footer id="my_boton_bar" class="boton_bar blue-green-grad" style="height:4%; width:99%; bottom:0%; position: absolute;">
+	<!--nothing -->
+	</footer>
+
 </div>
-	
-
-<div id="myANIMATION2" style="position:relative; float:left; width:275px; top:270px; left: 450; background-color:rgb(88,138,231); padding:1em; padding-right:1em; border-radius:10%/10%;font-family:Cambria, 'Hoefler Text', 'Nimbus Roman *No9 L Regular', Times, 'Times New Roman', serif; font-size:large; font-weight:bold; font-style:italic; color:rgb(88,138,255); border-style:solid; border-color:rgb(215,215,215); background-color:white; border-width:10px;-webkit-box-shadow: 6px 6px 5px #ccc;
--moz-box-shadow: 6px 6px 5px #ccc;box-shadow: 6px 6px 5px #ccc;">
-	Table of Contents
-</div>
-
-
-<div id="myOpacity" style="position:relative;"> 
-	<canvas  id="theCanvas" width="1400" height="900" style="position: absolute; left:100px; width:100%; top:30px">
-	Canvas not supported; please update your browser.
-	</canvas>
-</div>	
-
-
-<div class="centred" >
-<ul class="weighted" style="font-size: 100%" id="weightTags">
-	<li><a href="sierpinski.html" class="green huge">Sierpinski</a></li>
-	<li><a href="Newton's_Cannon.html" class="purple huge" style="font-family:Cambria, 'Hoefler Text', 'Nimbus Roman *No9 L Regular', Times, 'Times New Roman', serif;">Newton's Cannon</a></li>
-	<li><a href="gosper.html" class="green small">Gosper</a></li>	
-	<li><a href="koch.html" class="blue large">Koch fractal</a></li>
-	<li><a href="koch_snowflake.html" class="blue medium">Koch snowflake</a></li>
-	<li><a href="bioengineering.html" class="red medium">Bioengineering</a></li>
-	<li><a href="iterative_functions.html" class="green medium">Iterative function <br> fractals</a></li>
-	<li><a href="tree.html" class="purple medium" >Fractal Tree</a></li>
-	<li><a href="leaf.html" class="red huge" style="font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', Georgia, serif;">Barnsley Fern</a></li>
-	<li><a href="DLA.html" class="blue medium">Difusion<br>Limited<br>Aggregation</a></li>
-	<li><a href="mandelbrot.html" class="blue huge" style="font-family:'Arial Black',sans-serif; font-style:italic;">Mandelbrot</a></li>
-	<li><a href="julia.html" class="purple huge" style="font-family: 'Lucida Grande','Lucida Sans Unicode', 'Lucida Sans','Liberation Sans', Verdana, sans-serif;">Julia sets</a></li>
-	<li><a href="lorenz.html" class="blue medium">Lorenz attractor</a></li>
-	<li><a href="hilbert.html" class="green small">Hilbert</a></li>
-	<!--<li><a href="doppler.html" class="green medium" style="font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', Georgia, serif; font-size:27px;">doppler<br>effect</a></li> -->
-	<!--<li><a href="optic_fiber.html" class="green medium" style="font-family: Constantia, 'Lucida Bright', serif; font-size:27px;">Optic<br>fiber</a></li> -->
-	<li><a href="Fourier.html" class="blue huge" style="font-family:'Arial Black',sans-serif; font-style:italic;">Fourier</a></li>
-	<li><a href="Matching_game.html" class="green medium">Matching <br> game</a></li>
-	<!--<li><a href="games.html" class="blue medium">Games</a></li>-->
-	<!-- 	<li><a href="#" class="blue small">DAB</a></li>
-	<li><a href="#" class="blue small">Reed Solomon</a></li>
-	<li><a href="#" class="blue large">Vittervi</a></li>
-	<li><a href="#" class="blue medium">Pseudorandom functions</a></li>
-	<li><a href="#" class="blue small">Voltage regulator circuits</a></li>
-	<li><a href="#" class="blue huge">Birthday paradox</a></li>
-	<li><a href="#" class="red medium">Basics of circuit simulation</a></li>
-	<li><a href="#" class="red small">Lernpacket kit</a></li>
-	<li><a href="#" class="red medium">Electrodynamics</a></li>
-	<li><a href="#" class="red small">Joule thief</a></li>
-	<li><a href="#" class="red large">DIY *****oscilloscope</a></li>
-	<li><a href="#" class="red medium">AM/FM radio kit</a></li>
-	<li><a href="#" class="red small">Earth magnentism</a></li>
-	<li><a href="#" class="red large">Tiny Tesla</a></li>
-	<li><a href="#" class="red medium">Robot Arm</a></li>
-	<li><a href="#" class="lightblue medium">Tetris game</a></li>
-	<li><a href="#" class="lightblue medium">Galaxy</a></li>
-	<li><a href="#" class="lightblue small">Face recognition system</a></li>
-	<li><a href="#" class="green large">Inverted pendulum</a></li>
-	<li><a href="#" class="green small">Steganography</a></li>
-	<li><a href="#" class="green medium">2D particle simulation</a></li>
-	<li><a href="#" class="green small">Game of life</a></li>
-	<li><a href="#" class="green huge">animal guessing <br> game</a></li>
-	<li><a href="#" class="green small">bridge building</a></li>
-	<li><a href="#" class="green medium">Sudoku</a></li>
-	<li><a href="#" class="purple small">Colective intelligence</a></li>
-	<li><a href="#" class="green huge"><span style="color: "green"; font-family: 'Lucida Console',Monaco,monospace>About Me</span></a></li>
-	<li><a href="#" class="purple medium">Maze</a></li>
-	<li><a href="#" class="purple huge"><span style="color: green; font-family: 'Lucida Console',Monaco,monospace">tag</span></a></li>
-	<li><a href="#" class="purple medium">Liquid simulation</a></li>
-	<li><a href="#" class="purple medium">VCOs</a></li>
-	<li><a href="#" class="purple medium">Tetris</a></li>
-	<li><a href="#" class="green small">Blender 3D Car</a></li>
-	<li><a href="#" class="green medium">Fractals</a></li>
-	<li><a href="#" class="purple huge">Computer Chess</a></li>
-	<li><a href="#" class="purple small">Strange attractors</a></li>
-	<li><a href="#" class="purple large"><span style="color: "green"; font-family: 'Lucida Console',Monaco,monospace>Console Emulator</span></a></li>
-	<li><a href="#" class="red large">LED Cube</a></li>
-	<li><a href="#" class="red medium">Computational aerodinamcs</a></li>
-	<li><a href="#" class="lightblue medium">Electric Gun</a></li>
-	<li><a href="#" class="green huge">Plasma simulation</a></li>
-	<li><a href="#" class="green small">Gingerman</a></li>
-	<li><a href="#" class="green medium">Bioengineering</a></li>
-	li><a href="#" class="green medium">Sudoku</a></li>
-	<li><a href="#" class="green small">Game of life</a></li>  
-	<li><a href="#" class= "" > Maze</a></li>-->
-</ul>
-</div>
-
-<!-- 
-<h2>Table of contents</h2>
-<ul >
-	<li><a href="sierpinski.html" class="green ">Sierpinski</a></li>
-	<li><a href="Newton's_Cannon.html" class="purple" style="font-family:Cambria, 'Hoefler Text', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;">Newton's Cannon</a></li>
-	<li><a href="gosper.html" class="green">Gosper</a></li>	
-	<li><a href="koch.html" class="blue">Koch fractal</a></li>
-	<li><a href="koch_snowflake.html" class="blue ">Koch snowflake</a></li>
-	<li><a href="bioengineering.html" class="red">Bioengineering</a></li>
-	<li><a href="iterative_functions.html" class="green">Iterative function <br> fractals</a></li>
-	<li><a href="tree.html" class="purple" >Fractal Tree</a></li>
-	<li><a href="leaf.html" class="red" style="font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', Georgia, serif;">Barnsley Fern</a></li>
-	<li><a href="DLA.html" class="blue">Difusion<br>Limited<br>Aggregation</a></li>
-	<li><a href="mandelbrot.html" class="blue" style="font-family:'Arial Black',sans-serif; font-style:italic;">Mandelbrot</a></li>
-	<li><a href="julia.html" class="purple" style="font-family: 'Lucida Grande','Lucida Sans Unicode', 'Lucida Sans','Liberation Sans', Verdana, sans-serif;">Julia sets</a></li>
-	<li><a href="lorenz.html" class="blue">Lorenz attractor</a></li>
-	<li><a href="hilbert.html" class="green">Hilbert</a></li>
-	<li><a href="doppler.html" class="green" style="font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', Georgia, serif;">doppler<br>effect</a></li>
-	<li><a href="optic_fiber.html" class="green" style="font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', Georgia, serif;">Optic<br>fiber</a></li>
-	<li><a href="Fourier.html" class="blue" style="font-family:'Arial Black',sans-serif; font-style:italic;">Fourier</a></li>
-	<li><a href="Matching_game.html" class="green">Matching <br> game</a></li>
-	<li><a href="games/game01/game01.html" class="purple" >Me vs. Crabs</a></li> 
-</ul>
--->
-
-<footer id="my_boton_bar" class="boton_bar blue-green-grad" style="height:4%; width:99%; bottom:0%; position: absolute;">
-<!--nothing -->
-</footer>
-
 
 </body>
 </html>
