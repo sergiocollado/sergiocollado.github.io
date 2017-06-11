@@ -19,7 +19,8 @@
  <script type="text/javascript">
   window.onload = function() {
     try {	
-     <!-- TagCanvas.Start('theCanvas','weightTags',{textFont:null, textColour:null, weight: true, radiusX :'0.8', radiusY:'0.8',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'} ); -->
+     <!-- TagCanvas.Start('theCanvas','weightTags',{textFont:null, textColour:null, weight: true, radiusX :'0.8', 
+	radiusY:'0.8',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'} ); -->
      TagCanvas.Start('theCanvas','weightTags',{shape:'hring',lock:'x', textFont:null, textColour:null,
      weight: true, radiusX :'0.9', radiusY:'0.9',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1' } );
     }
@@ -27,6 +28,7 @@
     {
     // something went wrong, hide the canvas container
     document.getElementById('theCanvas').style.display = 'none';  
+    console.log("error w/ canvas: " + e);
     } 
   };
 	
@@ -42,6 +44,7 @@
 	  {
       // something went wrong, hide the canvas container
       document.getElementById('theCanvas').style.display = 'none';  
+      console.log("error w/ canvas: " + e);
 	  }
 	};
 	
@@ -55,6 +58,7 @@
 	  {
       // something went wrong, hide the canvas container
       document.getElementById('theCanvas').style.display = 'none';  
+      console.log("error w/ canvas: " + e);
 	  }
 	};
 
@@ -70,6 +74,7 @@
 	  {
       // something went wrong, hide the canvas container
       document.getElementById('theCanvas').style.display = 'none';  
+      console.log("error w/ canvas: " + e);
 	  }
 	};
 
@@ -81,7 +86,8 @@ function sphere() {
 	  catch(e) 
 	  {
       // something went wrong, hide the canvas container
-      document.getElementById('theCanvas').style.display = 'none';  
+      document.getElementById('theCanvas').style.display = 'none'; 
+      console.log("error w/ canvas: " + e);		  
 	  } 
 	};
 
@@ -96,7 +102,7 @@ function sphere() {
       shape:'sphere'
     });
 	} catch(e) {
-	console.log("error: e " + e.ex );
+	console.log("error w/ canvas: " + e);
 	}
 };
 
@@ -261,8 +267,7 @@ a.blue { color: rgb(88,138,231)}
 
 	
 
-	<header id="my_top_bar" class="blue-green-grad" style="height:4%; width:99%; 
-	position: absolute;">
+	<header id="my_top_bar" class="blue-green-grad" style="height:4%; width:99%;">
 	<!--nothing -->
 	</header>
 
@@ -394,7 +399,7 @@ a.blue { color: rgb(88,138,231)}
 
 	</div> <!-- end body max-width:600px magin:auto -->
 	
-	<footer id="my_boton_bar" class="blue-green-grad" style="height:4%; width:99%; bottom:0%; position: absolute;">
+	<footer id="my_boton_bar" class="blue-green-grad" style="height:4%; width:99%; bottom:0%; ">
 	<!--nothing -->
 	</footer>
 
