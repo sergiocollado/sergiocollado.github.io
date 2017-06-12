@@ -109,12 +109,12 @@ a.blue { color: rgb(88,138,231)}
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
     from {left: -700px;}
-    to {left: 600px;}
+    to {left: 875px;}
 }
 
 @keyframes mymove {
     from {left: -700px;}
-    to {left: 600px;}
+    to {left: 875px;}
 }
 
 #myOpacity{
@@ -150,8 +150,15 @@ a.blue { color: rgb(88,138,231)}
 </style>
 
 </head>
-<body style="font-family:sans-serif; font-size:20px; background-color:#EEEEEE; width:100%; height:100%;
-	     background-size:contain; float:left; left:0%" >
+<body style="border:1px; border-color:black; font-family:sans-serif; font-size:20px; width:600px; height:600px;
+	background-size: contain; /* Scale to the largest size*/
+	background-color: lightgray; /* for browsers without support for gradients*/
+	background: -webkit-radial-gradient(100% 100%, farthest-corner,white, lightgray /* , white */); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(100% 100%, farthest-corner,white, lightgray /* , white */); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(100% 100%, farthest-corner,white, lightgray /* , white */); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(farthest-corner at 100% 100%,white, lightgray /* , white */); /* Standard syntax (must be last) */
+	background-repeat: no-repeat;
+    >
 	
 <!-- background-color:#f0f0f0; -->
 <!-- background-color: rgb(255,255,245); -->
