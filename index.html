@@ -15,6 +15,120 @@
 
 <title>Sergio's web</title>
 
+	
+
+	
+	
+<script src="tagcanvas.js" type="text/javascript"></script>
+ <script type="text/javascript">
+  window.onload = function() {
+    try {	
+     /* TagCanvas.Start('theCanvas','weightTags',{textFont:null, textColour:null, weight: true, radiusX :'0.8', 
+	radiusY:'0.8',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'} ); */
+     TagCanvas.Start('theCanvas','weightTags',{shape:'hring',lock:'x', textFont:null, textColour:null,
+     weight: true, radiusX :'0.9', radiusY:'0.9',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1' } );
+    }
+    catch(e) 
+    {
+    // something went wrong, hide the canvas container
+    document.getElementById('theCanvas').style.display = 'none';  
+    console.log("error w/ canvas: " + e);
+    } 
+  };
+	
+	function Vcylinder() {
+	 console.log("function: Vcylinder()");
+	    try {
+      TagCanvas.Start('theCanvas','weightTags',{shape:'vcylinder', lock:'z',lock:'y',textFont:null, textColour:null,
+	weight: true, radiusX :'0.9', radiusY:'0.9',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'
+	  } );
+	  
+	  }
+	  catch(e) 
+	  {
+      // something went wrong, hide the canvas container
+      document.getElementById('theCanvas').style.display = 'none';  
+      console.log("error w/ canvas: " + e);
+	  }
+	};
+	
+		function Hcilinder() {
+	    try {
+      TagCanvas.Start('theCanvas','weightTags',{shape:'hcylinder',lock:'x', textFont:null, textColour:null,
+	weight: true, radiusX :'0.9', radiusY:'0.9',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'} );
+	  
+	  }
+	  catch(e) 
+	  {
+      // something went wrong, hide the canvas container
+      document.getElementById('theCanvas').style.display = 'none';  
+      console.log("error w/ canvas: " + e);
+	  }
+	};
+
+
+		function hring() {
+		console.log("enter hring");
+	    try {
+      TagCanvas.Start('theCanvas','weightTags',{shape:'hring',lock:'x', textFont:null, textColour:null, weight: true, radiusX :'0.9', radiusY:'0.9',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'
+	  } );
+	  
+	  }
+	  catch(e) 
+	  {
+      // something went wrong, hide the canvas container
+      document.getElementById('theCanvas').style.display = 'none';  
+      console.log("error w/ canvas: " + e);
+	  }
+	};
+
+function sphere() {
+    try {	
+      TagCanvas.Start('theCanvas','weightTags',{shape:'sphere',textFont:null, textColour:null, weight: true,
+	radiusX :'0.8', radiusY:'0.8',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'} );
+	  }
+	  catch(e) 
+	  {
+      // something went wrong, hide the canvas container
+      document.getElementById('theCanvas').style.display = 'none'; 
+      console.log("error w/ canvas: " + e);		  
+	  } 
+	};
+
+
+/*	
+	function DblHelixfun()
+	{
+	console.log("enter dblhelixfun");
+	try{
+	
+	TagCanvas.Start('theCanvas','weightTags', {
+      shape:'sphere'
+    });
+	} catch(e) {
+	console.log("error w/ canvas: " + e);
+	}
+};
+
+function DblHelix() {
+ console.log("enger DblHelix()!");
+  var n=15; var rx=1; var ry=1; var rz=1;
+  var a = Math.PI / n, i, j, p = [], z = rz * 2 / n;
+  for(i = 0; i < n; ++i) {
+    j = a * i;
+    if(i % 2)
+      j += Math.PI;
+    p.push([rx * Math.cos(j), rz - z * i, ry * Math.sin(j)]);
+  }
+  console.log("p:" + p );
+  
+  return p;
+};
+*/
+ </script>
+	
+	
+	
 <!--
 <link rel="stylesheet" href="mycss.css">
 -->
@@ -301,118 +415,6 @@ a.blue { color: rgb(88,138,231)}
 	<footer id="my_boton_bar" class="blue-green-grad" style="height:4%; width:99%; bottom:0%";>
 	<!--nothing -->
 	</footer>
-</div> <!-- end id=main-->
-
-	
-	
-<script src="tagcanvas.js" type="text/javascript"></script>
- <script type="text/javascript">
-  window.onload = function() {
-    try {	
-     /* TagCanvas.Start('theCanvas','weightTags',{textFont:null, textColour:null, weight: true, radiusX :'0.8', 
-	radiusY:'0.8',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'} ); */
-     TagCanvas.Start('theCanvas','weightTags',{shape:'hring',lock:'x', textFont:null, textColour:null,
-     weight: true, radiusX :'0.9', radiusY:'0.9',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1' } );
-    }
-    catch(e) 
-    {
-    // something went wrong, hide the canvas container
-    document.getElementById('theCanvas').style.display = 'none';  
-    console.log("error w/ canvas: " + e);
-    } 
-  };
-	
-	function Vcylinder() {
-	 console.log("function: Vcylinder()");
-	    try {
-      TagCanvas.Start('theCanvas','weightTags',{shape:'vcylinder', lock:'z',lock:'y',textFont:null, textColour:null,
-	weight: true, radiusX :'0.9', radiusY:'0.9',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'
-	  } );
-	  
-	  }
-	  catch(e) 
-	  {
-      // something went wrong, hide the canvas container
-      document.getElementById('theCanvas').style.display = 'none';  
-      console.log("error w/ canvas: " + e);
-	  }
-	};
-	
-		function Hcilinder() {
-	    try {
-      TagCanvas.Start('theCanvas','weightTags',{shape:'hcylinder',lock:'x', textFont:null, textColour:null,
-	weight: true, radiusX :'0.9', radiusY:'0.9',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'} );
-	  
-	  }
-	  catch(e) 
-	  {
-      // something went wrong, hide the canvas container
-      document.getElementById('theCanvas').style.display = 'none';  
-      console.log("error w/ canvas: " + e);
-	  }
-	};
-
-
-		function hring() {
-		console.log("enter hring");
-	    try {
-      TagCanvas.Start('theCanvas','weightTags',{shape:'hring',lock:'x', textFont:null, textColour:null, weight: true, radiusX :'0.9', radiusY:'0.9',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'
-	  } );
-	  
-	  }
-	  catch(e) 
-	  {
-      // something went wrong, hide the canvas container
-      document.getElementById('theCanvas').style.display = 'none';  
-      console.log("error w/ canvas: " + e);
-	  }
-	};
-
-function sphere() {
-    try {	
-      TagCanvas.Start('theCanvas','weightTags',{shape:'sphere',textFont:null, textColour:null, weight: true,
-	radiusX :'0.8', radiusY:'0.8',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'} );
-	  }
-	  catch(e) 
-	  {
-      // something went wrong, hide the canvas container
-      document.getElementById('theCanvas').style.display = 'none'; 
-      console.log("error w/ canvas: " + e);		  
-	  } 
-	};
-
-
-/*	
-	function DblHelixfun()
-	{
-	console.log("enter dblhelixfun");
-	try{
-	
-	TagCanvas.Start('theCanvas','weightTags', {
-      shape:'sphere'
-    });
-	} catch(e) {
-	console.log("error w/ canvas: " + e);
-	}
-};
-
-function DblHelix() {
- console.log("enger DblHelix()!");
-  var n=15; var rx=1; var ry=1; var rz=1;
-  var a = Math.PI / n, i, j, p = [], z = rz * 2 / n;
-  for(i = 0; i < n; ++i) {
-    j = a * i;
-    if(i % 2)
-      j += Math.PI;
-    p.push([rx * Math.cos(j), rz - z * i, ry * Math.sin(j)]);
-  }
-  console.log("p:" + p );
-  
-  return p;
-};
-*/
- </script>
- 
-	
+</div> <!-- end id=main-->	
 </body>
 </html>
