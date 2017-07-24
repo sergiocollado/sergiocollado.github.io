@@ -17,40 +17,122 @@
 <style type="text/css">  	
 .blue-green-grad {
     /* gradient-angle-defined*/
-    background: blue; /* For browsers that do not support gradients */    
-    background: -webkit-linear-gradient(-45deg, #99ffdd,#99ccff, #99ffdd,  #e6ffb3); /* For Safari 5.1 to 6.0 */
+    background: lightblue; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(-45deg, #99ffdd,  #e6ffb3); /* For Safari 5.1 to 6.0   #99ffdd,#99ccff,*/
     background: -o-linear-gradient(-45deg, #99ffdd,#99ccff, #99ffdd,  #e6ffb3); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(-45deg, #99ffdd,#99ccff, #99ffdd,  #e6ffb3); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(-45deg, #99ffdd,#99ccff, #99ffdd,  #e6ffb3); /* Standard syntax (must be last) */
+    /*background: linear-gradient(-45deg,  #99ffdd, #99ffdd,  #e6ffb3);  Standard syntax (must be last) #99ccff,*/
+	background: linear-gradient(-45deg, #99ffdd, #b9d0f9 29%, #b0dcfc 68%, #cdfcf7 );
 }
- 
+
 .grey-grad {
-    background-color: lightgray; /* for browsers without support for gradients*/
+    background: lightgray; /* for browsers without support for gradients*/
     background: -webkit-radial-gradient(100% 100%, farthest-corner,white, lightgray /* , white */); /* Safari 5.1 to 6.0 */
     background: -o-radial-gradient(100% 100%, farthest-corner,white, lightgray /* , white */); /* For Opera 11.6 to 12.0 */
     background: -moz-radial-gradient(100% 100%, farthest-corner,white, lightgray /* , white */); /* For Firefox 3.6 to 15 */
     background: radial-gradient(farthest-corner at 100% 100%,white, lightgray /* , white */); /* Standard syntax (must be last) */
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size:cover;
   }
   
  .my-thumbnail {
    border-width:0px;
    border-radius:1.5em;
    padding:0.3em;
-   padding-bottom:2em;
-   margin:3em;
-   max-height:45%;
+   /*padding-bottom:2em;*/
+   margin:1.3em;
+   /*max-height:attr(width)px;*/
+   
+  -moz-box-shadow: 6px 6px 5px #ccc;
+  box-shadow: 6px 6px 5px #ccc;
   }
   
   .my-img {
    border-radius:1.5em;
   }
   
+  .no_user_select {
+    -webkit-user-select: none; /* Chrome, Opera, Safari */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+  }
   
+.my_animation {
+	-webkit-animation: my_grad_animation 120s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+	-webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+	-webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+	
+    animation: my_grad_animation 120s infinite;
+	animation-timing-function: linear;	
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+ 
+ 
+ /* Code for old Chrome, Safari and Opera */
+@-webkit-keyframes my_grad_animation {
+    /*from {background: linear-gradient(-45deg, #99ffdd, #b9d0f9 29%, #b0dcfc 68%, #cdfcf7 );}*/
+    /*to {background: linear-gradient(+45deg, #99ffdd, #b9d0f9 29%, #b0dcfc 68%, #cdfcf7  );}*/
+	
+	0%   {background: linear-gradient(-45deg, #99ffdd 0%,  #b9d0f9  25%, #b0dcfc  55%, #cdfcf7  65%);}
+    5%   {background: linear-gradient(-45deg, #99ffdd 5%,  #b9d0f9  30%, #b0dcfc  50%, #cdfcf7  70%);}
+    10%  {background: linear-gradient(-45deg, #99ffdd 10%, #b9d0f9  35%, #b0dcfc  55%, #cdfcf7  75%);}
+    15%  {background: linear-gradient(-45deg, #99ffdd 15%, #b9d0f9  40%, #b0dcfc  60%, #cdfcf7  80%);}
+    20%  {background: linear-gradient(-45deg, #99ffdd 20%, #b9d0f9  45%, #b0dcfc  65%, #cdfcf7  85%);}
+	25%  {background: linear-gradient(-45deg, #99ffdd 25%, #b9d0f9  50%, #b0dcfc  70%, #cdfcf7  90%);}
+    30%  {background: linear-gradient(-45deg, #99ffdd 30%, #b9d0f9  55%, #b0dcfc  75%, #cdfcf7  95%);}
+    35%  {background: linear-gradient(-45deg, #99ffdd 35%, #b9d0f9  60%, #b0dcfc  80%, #cdfcf7 100%);}
+    40%  {background: linear-gradient(-45deg,  #cdfcf7  0%, #99ffdd  40%, #b9d0f9  65%, #b0dcfc  85%);}
+    45%  {background: linear-gradient(-45deg,  #cdfcf7 10%, #99ffdd  45%, #b9d0f9  70%, #b0dcfc  90%);}
+	50%  {background: linear-gradient(-45deg, #cdfcf7 15%, #99ffdd  50%, #b9d0f9  75%, #b0dcfc  95%);}
+    55%  {background: linear-gradient(-45deg, #cdfcf7 20%, #99ffdd  55%, #b9d0f9  80%, #b0dcfc 100%);}
+    60%  {background: linear-gradient(-45deg, #b0dcfc  0%, #cdfcf7 35%,  #99ffdd  60%, #b9d0f9  85%);}
+    65%  {background: linear-gradient(-45deg, #b0dcfc  5%, #cdfcf7 35%,  #99ffdd  65%, #b9d0f9  90%);}
+    70%  {background: linear-gradient(-45deg, #b0dcfc 10%, #cdfcf7 40%,  #99ffdd  70%, #b9d0f9  95%);}
+	75%  {background: linear-gradient(-45deg, #b0dcfc 15%, #cdfcf7 45%,  #99ffdd  75%, #b9d0f9 100%);}
+    80%  {background: linear-gradient(-45deg, #b9d0f9  0%, #b0dcfc 20%,  #cdfcf7 50%,  #99ffdd  80% ;}
+    85%  {background: linear-gradient(-45deg, #b9d0f9  5%, #b0dcfc 25%,  #cdfcf7 55%,  #99ffdd  85% ;}
+    90%  {background: linear-gradient(-45deg, #b9d0f9 10%, #b0dcfc 30%,  #cdfcf7 60%,  #99ffdd  90% ;}
+    95%  {background: linear-gradient(-45deg, #b9d0f9 15%, #b0dcfc 35%,  #cdfcf7 65%,  #99ffdd  95% ;}	
+}
+
+/* Standard syntax */
+@keyframes my_grad_animation {
+    /*from {background: linear-gradient(-45deg, #99ffdd, #b9d0f9 29%, #b0dcfc 68%, #cdfcf7 );}*/
+    /*to {background: linear-gradient(+45deg, #99ffdd, #b9d0f9 29%, #b0dcfc 68%, #cdfcf7  );}*/
+	
+	0%   {background: linear-gradient(-45deg, #99ffdd 0%,  #b9d0f9  25%, #b0dcfc  55%, #cdfcf7  65%);}
+    5%   {background: linear-gradient(-45deg, #99ffdd 5%,  #b9d0f9  30%, #b0dcfc  50%, #cdfcf7  70%);}
+    10%  {background: linear-gradient(-45deg, #99ffdd 10%, #b9d0f9  35%, #b0dcfc  55%, #cdfcf7  75%);}
+    15%  {background: linear-gradient(-45deg, #99ffdd 15%, #b9d0f9  40%, #b0dcfc  60%, #cdfcf7  80%);}
+    20%  {background: linear-gradient(-45deg, #99ffdd 20%, #b9d0f9  45%, #b0dcfc  65%, #cdfcf7  85%);}
+	25%  {background: linear-gradient(-45deg, #99ffdd 25%, #b9d0f9  50%, #b0dcfc  70%, #cdfcf7  90%);}
+    30%  {background: linear-gradient(-45deg, #99ffdd 30%, #b9d0f9  55%, #b0dcfc  75%, #cdfcf7  95%);}
+    35%  {background: linear-gradient(-45deg, #99ffdd 35%, #b9d0f9  60%, #b0dcfc  80%, #cdfcf7 100%);}
+    40%  {background: linear-gradient(-45deg,  #cdfcf7  0%, #99ffdd  40%, #b9d0f9  65%, #b0dcfc  85%);}
+    45%  {background: linear-gradient(-45deg,  #cdfcf7 10%, #99ffdd  45%, #b9d0f9  70%, #b0dcfc  90%);}
+	50%  {background: linear-gradient(-45deg, #cdfcf7 15%, #99ffdd  50%, #b9d0f9  75%, #b0dcfc  95%);}
+    55%  {background: linear-gradient(-45deg, #cdfcf7 20%, #99ffdd  55%, #b9d0f9  80%, #b0dcfc 100%);}
+    60%  {background: linear-gradient(-45deg, #b0dcfc  0%, #cdfcf7 35%,  #99ffdd  60%, #b9d0f9  85%);}
+    65%  {background: linear-gradient(-45deg, #b0dcfc  5%, #cdfcf7 35%,  #99ffdd  65%, #b9d0f9  90%);}
+    70%  {background: linear-gradient(-45deg, #b0dcfc 10%, #cdfcf7 40%,  #99ffdd  70%, #b9d0f9  95%);}
+	75%  {background: linear-gradient(-45deg, #b0dcfc 15%, #cdfcf7 45%,  #99ffdd  75%, #b9d0f9 100%);}
+    80%  {background: linear-gradient(-45deg, #b9d0f9  0%, #b0dcfc 20%,  #cdfcf7 50%,  #99ffdd  80% ;}
+    85%  {background: linear-gradient(-45deg, #b9d0f9  5%, #b0dcfc 25%,  #cdfcf7 55%,  #99ffdd  85% ;}
+    90%  {background: linear-gradient(-45deg, #b9d0f9 10%, #b0dcfc 30%,  #cdfcf7 60%,  #99ffdd  90% ;}
+    95%  {background: linear-gradient(-45deg, #b9d0f9 15%, #b0dcfc 35%,  #cdfcf7 65%,  #99ffdd  95% ;}	
+}
+
+
 </style>
 </head>
-<body class="grey-grad">
+<body class="grey-grad no_user_select" style="color:DodgerBlue; font-size:1.55em">
   
-<nav class="navbar navbar-inverse blue-green-grad" style="border-width:0px; border-bottom-width:5px; border-bottom-color:white">
+<nav class="navbar navbar-inverse navbar-fixed-top blue-green-grad" style="border-width:0px; border-bottom-width:3px; border-bottom-color:white; font-size:0.9em">
+
   <div class="container-fluid">
     
     <div class="navbar-header">
@@ -112,43 +194,78 @@
     <div class="row" style="padding-top:3em"> 
       
       <!-- Here goes the thumbimages of the projects -->
-      <div class="col-md-6">
+      <div class="col-sm-6">
+	  
+	  
         <div class="thumbnail my-thumbnail">
           <a href="img_vertebras_horiz.jpg" target="_blank">
-            <img class="my-img" src="img_vertebras_horiz.jpg" alt="vertebras_horiz_view"  style="width:100%;">
-            <div class="caption">
+            <img class="my-img" src="img_vertebras_horiz.jpg" alt="vertebras_horiz_view" >
+            <div class="caption" style="text-align:center">
               <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
             </div>
           </a>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="thumbnail my-thumbnail">
+		
+		
+		<div class="thumbnail my-thumbnail">
           <a href="cristal.jpg" target="_blank">
-            <img  class="my-img" src="cristal.jpg" alt="quirurgic_aparatus" style="width:100%;">
-            <div class="caption">
+            <img  class="my-img" src="cristal.jpg" alt="quirurgic_aparatus">
+            <div class="caption" style="text-align:center">
               <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
             </div>
           </a>
         </div>
+		
       </div>
-      <div class="col-md-6">
-        <div class="thumbnail my-thumbnail">
+	  
+	  
+      <div class="col-sm-6">
+
+		<div class="thumbnail my-thumbnail">
           <a href="NewtonDrawing2.jpg" target="_blank">
-            <img  class="my-img"  src="NewtonDrawing2.jpg" alt="A treatease of the World" style="width:100%;">
-            <div class="caption">
+            <img  class="my-img"  style="background:lightgray;" src="NewtonDrawing2.jpg" alt="A treatease of the World" >
+            <div class="caption" style="text-align:center">
               <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
             </div>
           </a>
         </div>
+		
+		<div class="thumbnail my-thumbnail" 
+          <a href="sierpenski.png" target="_blank">
+            <img  class="my-img" src="sierpenski.png" alt="sierpenski" style="background:LightYellow">
+            <div class="caption" style="text-align:center">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+		
+		
+		
       </div>
+     
     </div>
   </div>
   
   
   
   
-</div> <!-- div class=container-fluid
+</div> <!-- div class=container-fluid -->
+
+
+ <nav class="navbar navbar-inverse navbar-fixed-bottom blue-green-grad" style="bottom:0px;max-height:2%; min-height:3px; border-width:0px; border-top-width:2px; border-top-color:white">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"> </a>
+    </div>
+  <!--   <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+     <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li> 
+    </ul>-->
+  </div>
+</nav> 
+
 
 </body>
 </html>
