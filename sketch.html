@@ -6,14 +6,32 @@
   
   <meta charset="utf-8"/>	
   <meta name="description" content="Sergio Gonzalez Collado Web Page">
-  <meta name="keywords" content="Sergio, Sergio Collado, Sergio Gonzalez Collado, Sergio González Collado, Physics, Engineering, Best Engineer, Best Engineer Ever, Awesome Engineer, Cool Engineer">
+  <meta name="keywords" content="Sergio, Sergio Collado, Sergio Gonzalez Collado, Sergio González Collado, Physics, Engineering, mathematics, Best Engineer, Best Engineer Ever, Awesome Engineer, Cool Engineer">
   <meta name="author" content="Sergio, Sergio Collado, Sergio Gonzalez Collado, Sergio González Collado">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+
+<script src="tagcanvas.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+window.onload = function() {
+	try 
+	{
+	  TagCanvas.Start('theCanvas','weightTags',{shape:'hring',lock:'x', textFont:null, textColour:null, weight: true, radiusX :'1', radiusY:'1.1',initial: [0.22,0.12], decel: '0.99', outlineRadius: '9',zoom:'1'} );
+	}
+	catch(e) 
+	{
+		// something went wrong, hide the canvas container
+		console.log(e);
+		document.getElementById('theCanvas').style.display = 'none';  
+	} 
+};  //end window.onload.
+ </script>
+ 
+ 
 <style type="text/css">  	
 .blue-green-grad {
     /* gradient-angle-defined*/
@@ -123,7 +141,50 @@
     80%  {background: linear-gradient(-45deg, #b9d0f9  0%, #b0dcfc 20%,  #cdfcf7 50%,  #99ffdd  80%) ;}
     85%  {background: linear-gradient(-45deg, #b9d0f9  5%, #b0dcfc 25%,  #cdfcf7 55%,  #99ffdd  85%) ;}
     90%  {background: linear-gradient(-45deg, #b9d0f9 10%, #b0dcfc 30%,  #cdfcf7 60%,  #99ffdd  90%) ;}
-    95%  {background: linear-gradient(-45deg, #b9d0f9 15%, #b0dcfc 35%,  #cdfcf7 65%,  #99ffdd  95%9 ;}	
+    95%  {background: linear-gradient(-45deg, #b9d0f9 15%, #b0dcfc 35%,  #cdfcf7 65%,  #99ffdd  95%) ;}	
+}
+
+ul.weighted {
+ float: left;
+ display: block;
+ overflow: auto;
+ padding: 20px;
+ margin: 0 10px 20px 0;
+ background-color: #fff;
+ border: 4px solid #aaa;
+ border-radius: 20px;
+ -moz-border-radius: 20px;
+}
+ul.weighted li { display: inline }
+ul.weighted li a { margin: 2px }
+.centred p { width: 1em; float: left; margin-left: 0.5em }
+.preright { float: left }
+.huge { font-family: Impact,sans-serif; font-size: 2em }
+.large { font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif; font-size: 1.5em }
+.medium { font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace; font-size: 1em }
+.small { font-family: Georgia,sans-serif; font-size: 0.8em }
+a.red { color: rgb(255,128,0) }
+a.green { color: rgb(168,242,57) }
+a.purple { color: rgb(244,233,19) }
+a.lightblue { color: rgb(159,207,255)}
+a.blue { color: rgb(88,138,231)}
+
+#myOpacity{
+    -webkit-animation: myopac 9s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation: myopac 9s;
+    animation-fill-mode: forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myopac {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+@keyframes myopac {
+    from {opacity:0;}
+    to {opacity:1;}
 }
 
 
@@ -131,6 +192,76 @@
 </head>
 <body class="grey-grad no_user_select" style="color:DodgerBlue; font-size:1.55em">
   
+  <div class="centred" >
+	<ul class="weighted" style="font-size: 100%" id="weightTags">
+		<li><a href="sierpinski.html" class="green huge">Sierpinski</a></li>
+		<li><a href="Newton's_Cannon.html" class="purple huge" style="font-family:Cambria, 'Hoefler Text', 'Nimbus Roman *No9 L Regular', Times, 'Times New Roman', serif;">Newton's Cannon</a></li>
+		<li><a href="gosper.html" class="green small">Gosper</a></li>	
+		<li><a href="koch.html" class="blue large">Koch fractal</a></li>
+		<li><a href="koch_snowflake.html" class="blue medium">Koch snowflake</a></li>
+		<li><a href="bioengineering.html" class="red medium">Bioengineering</a></li>
+		<li><a href="iterative_functions.html" class="green medium">Iterative function <br> fractals</a></li>
+		<li><a href="tree.html" class="purple medium" >Fractal Tree</a></li>
+		<li><a href="leaf.html" class="red huge" style="font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', Georgia, serif;">Barnsley Fern</a></li>
+		<li><a href="DLA.html" class="blue medium">Difusion<br>Limited<br>Aggregation</a></li>
+		<li><a href="mandelbrot.html" class="blue huge" style="font-family:'Arial Black',sans-serif; font-style:italic;">Mandelbrot</a></li>
+		<li><a href="julia.html" class="purple huge" style="font-family: 'Lucida Grande','Lucida Sans Unicode', 'Lucida Sans','Liberation Sans', Verdana, sans-serif;">Julia sets</a></li>
+		<li><a href="lorenz.html" class="blue medium">Lorenz attractor</a></li>
+		<li><a href="hilbert.html" class="green small">Hilbert</a></li>
+		<!--<li><a href="doppler.html" class="green medium" style="font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', Georgia, serif; font-size:27px;">doppler<br>effect</a></li> -->
+		<!--<li><a href="optic_fiber.html" class="green medium" style="font-family: Constantia, 'Lucida Bright', serif; font-size:27px;">Optic<br>fiber</a></li> -->
+		<li><a href="Fourier.html" class="blue huge" style="font-family:'Arial Black',sans-serif; font-style:italic;">Fourier</a></li>
+		<li><a href="Matching_game.html" class="green medium">Matching <br> game</a></li>
+		<!--<li><a href="games.html" class="blue medium">Games</a></li>-->
+		<!-- 	<li><a href="#" class="blue small">DAB</a></li>
+		<li><a href="#" class="blue small">Reed Solomon</a></li>
+		<li><a href="#" class="blue large">Vittervi</a></li>
+		<li><a href="#" class="blue medium">Pseudorandom functions</a></li>
+		<li><a href="#" class="blue small">Voltage regulator circuits</a></li>
+		<li><a href="#" class="blue huge">Birthday paradox</a></li>
+		<li><a href="#" class="red medium">Basics of circuit simulation</a></li>
+		<li><a href="#" class="red small">Lernpacket kit</a></li>
+		<li><a href="#" class="red medium">Electrodynamics</a></li>
+		<li><a href="#" class="red small">Joule thief</a></li>
+		<li><a href="#" class="red large">DIY *****oscilloscope</a></li>
+		<li><a href="#" class="red medium">AM/FM radio kit</a></li>
+		<li><a href="#" class="red small">Earth magnentism</a></li>
+		<li><a href="#" class="red large">Tiny Tesla</a></li>
+		<li><a href="#" class="red medium">Robot Arm</a></li>
+		<li><a href="#" class="lightblue medium">Tetris game</a></li>
+		<li><a href="#" class="lightblue medium">Galaxy</a></li>
+		<li><a href="#" class="lightblue small">Face recognition system</a></li>
+		<li><a href="#" class="green large">Inverted pendulum</a></li>
+		<li><a href="#" class="green small">Steganography</a></li>
+		<li><a href="#" class="green medium">2D particle simulation</a></li>
+		<li><a href="#" class="green small">Game of life</a></li>
+		<li><a href="#" class="green huge">animal guessing <br> game</a></li>
+		<li><a href="#" class="green small">bridge building</a></li>
+		<li><a href="#" class="green medium">Sudoku</a></li>
+		<li><a href="#" class="purple small">Colective intelligence</a></li>
+		<li><a href="#" class="green huge"><span style="color: "green"; font-family: 'Lucida Console',Monaco,monospace>About Me</span></a></li>
+		<li><a href="#" class="purple medium">Maze</a></li>
+		<li><a href="#" class="purple huge"><span style="color: green; font-family: 'Lucida Console',Monaco,monospace">tag</span></a></li>
+		<li><a href="#" class="purple medium">Liquid simulation</a></li>
+		<li><a href="#" class="purple medium">VCOs</a></li>
+		<li><a href="#" class="purple medium">Tetris</a></li>
+		<li><a href="#" class="green small">Blender 3D Car</a></li>
+		<li><a href="#" class="green medium">Fractals</a></li>
+		<li><a href="#" class="purple huge">Computer Chess</a></li>
+		<li><a href="#" class="purple small">Strange attractors</a></li>
+		<li><a href="#" class="purple large"><span style="color: "green"; font-family: 'Lucida Console',Monaco,monospace>Console Emulator</span></a></li>
+		<li><a href="#" class="red large">LED Cube</a></li>
+		<li><a href="#" class="red medium">Computational aerodinamcs</a></li>
+		<li><a href="#" class="lightblue medium">Electric Gun</a></li>
+		<li><a href="#" class="green huge">Plasma simulation</a></li>
+		<li><a href="#" class="green small">Gingerman</a></li>
+		<li><a href="#" class="green medium">Bioengineering</a></li>
+		li><a href="#" class="green medium">Sudoku</a></li>
+		<li><a href="#" class="green small">Game of life</a></li>  
+		<li><a href="#" class= "" > Maze</a></li>-->
+	</ul>
+</div>	
+	
 <nav class="navbar navbar-inverse navbar-fixed-top blue-green-grad" style="border-width:0px; border-bottom-width:3px; border-bottom-color:white; font-size:0.9em">
 
   <div class="container-fluid">
@@ -174,6 +305,33 @@
   <p>The following example will result in a 50%/50% split on medium and large devices. On small (and extra small) devices, it will automatically stack (100%).</p>
   <p>Resize the browser window to see the effect.</p>
  
+ <div id="myOpacity">
+			<canvas  id="theCanvas"  width="680" height="500" style="align:left; width:60%; transparent:0; margin:-5%;";>
+			Canvas not supported; please update your browser.
+			</canvas>
+ </div>
+ 
+	 <div id="myANIMATION3" style="float:right; width:25%;
+	background-color:rgb(88,138,231);
+	padding:1em; 
+	padding-right:1em;
+	border-radius:10%/10%;
+	font-size:large; font-weight:bold; font-style:italic; color:#f0f0f0; border-style:solid; border-color:white; border-width:10px;
+	background-image: linear-gradient(to bottom,rgb(125,138,255),rgb(221,243,255) 66%, rgb(125,138,255));
+	-webkit-box-shadow: 6px 6px 5px #ccc;
+	-moz-box-shadow: 6px 6px 5px #ccc;
+	box-shadow: 6px 6px 5px #ccc;">
+
+		<div class="tooltip" style="float:right; position:relative; top:20px">
+		<img src="Ser_icon.png" > 
+		<span class="tooltiptext"> Hi there!</span>
+		</div>
+
+		<p > <span style="color:yellow">Hi there!</span> <br> I'm a nice guy who enjoys with <span onmouseover='Vcylinder()' style="color:rgb(255,128,0)" > maths </span>, <span onmouseover="Hcilinder()" style="color: rgb(168,242,57)">science</span>,<span onmouseover="hring()" style="color:blue"> technology</span> and <span onmouseover="sphere()" style="color:yellow">engineering</span>.</p>
+						
+	</div>
+ 
+ 
   <div class="row">
     
     <div class="col-md-6" style="background-color:yellow;">
@@ -188,14 +346,12 @@
   </div> <!-- div class=row-->
   
     <!-------------------------------------------------> 
-    <!--               IMAGE GALLERY                --->
+    <!-------IMAGE GALLERY ---------------------------->
     <!-------------------------------------------------> 
   
     <div class="row" style="padding-top:3em"> 
       
       <!-- Here goes the thumbimages of the projects -->
-	    
-      <!-- col_1 -->
       <div class="col-sm-6">
 	  
 	  
@@ -209,7 +365,7 @@
         </div>
 		
 		
-	<div class="thumbnail my-thumbnail">
+		<div class="thumbnail my-thumbnail">
           <a href="cristal.jpg" target="_blank">
             <img  class="my-img" src="cristal.jpg" alt="quirurgic_aparatus">
             <div class="caption" style="text-align:center">
@@ -218,20 +374,9 @@
           </a>
         </div>
 		
-	      
-	<div class="thumbnail my-thumbnail">
-          <a href="../img/my_robot.PNG" target="_blank">
-            <img  class="my-img" src="../img/my_robot.PNG" alt="robot prototype">
-            <div class="caption" style="text-align:center">
-              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-            </div>
-          </a>
-        </div>     
-	      
-	      
-      </div> <!-- end col_1 -->
+      </div>
 	  
-      <!-- col_2 -->
+	  
       <div class="col-sm-6">
 
 		<div class="thumbnail my-thumbnail">
@@ -243,7 +388,7 @@
           </a>
         </div>
 		
-	<div class="thumbnail my-thumbnail" 
+		<div class="thumbnail my-thumbnail" 
           <a href="sierpenski.png" target="_blank">
             <img  class="my-img" src="sierpenski.png" alt="sierpenski" style="background:LightYellow">
             <div class="caption" style="text-align:center">
@@ -252,8 +397,9 @@
           </a>
         </div>
 		
-			
-      </div> <!-- end col_2-->
+		
+		
+      </div>
      
     </div>
   </div>
