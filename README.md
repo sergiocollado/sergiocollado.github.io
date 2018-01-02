@@ -6,7 +6,7 @@ this is the web site - Sergio González Collado
 the web address is: http://sergiocollado.github.io
 
 
-# 𝓢ℯ𝓇ℊ𝒾ℴ 𝓖. 𝓒ℴ𝓁𝓁𝒶𝒹ℴ
+# SERGIO GONZÁLEZ COLLADO
 
 ![image](https://github.com/sergiocollado/potpourri/blob/master/image/me.png?raw=true)
 
