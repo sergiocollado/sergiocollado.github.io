@@ -1,0 +1,498 @@
+:root {
+	font-size: calc(100vw/70);
+}
+
+my_body{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	width:100%;
+	background-size: cover;
+	background-color: lightgray; /* for browsers without support for gradients*/
+	background: -webkit-radial-gradient(100% 100%, farthest-corner,white, lightgray ); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(100% 100%, farthest-corner,white, lightgray ); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(100% 100%, farthest-corner,white, lightgray ); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(farthest-corner at 100% 100%,white, lightgray ); /* Standard syntax (must be last) */
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	position:absolute;
+}
+
+
+ul.weighted {
+ float: left;
+ display: block;-
+ overflow: auto;
+ padding: 20px;
+ margin: 0 10px 20px 0;
+ background-color: #fff;
+ border: 4px solid #aaa;
+ border-radius: 20px;
+ -moz-border-radius: 20px;
+}
+
+.notinsmall {
+	display: visible;
+}
+
+
+ul.weighted li { display: inline }
+ul.weighted li a { margin: 2px }
+.centred p { width: 1em; float: left; margin-left: 0.5em }
+.preright { float: left }
+.huge { font-family: Impact,sans-serif; font-size: 2em }
+.large { font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif; font-size: 1.5em }
+.medium { font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace; font-size: 1em }
+.small { font-family: Georgia,sans-serif; font-size: 0.8em }
+a.red { color: rgb(255,128,0) }
+a.green { color: rgb(168,242,57) }
+a.purple { color: rgb(244,233,19) }
+a.lightblue { color: rgb(159,207,255)}
+a.blue { color: rgb(88,138,231)}
+
+ /* Tooltip container */
+.tooltip {
+    /*position: relative;*/
+
+    display: inline-block;
+     /* border-bottom: 1px dotted black;If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #fff;
+	border-width: 1px;
+    border-style: solid;
+    border-color: #555;
+    color: #555;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text*/
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -60px;
+	/*position: relative*/
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+#myANIMATION{
+    position: relative;
+    -webkit-animation: mymove 3.5s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4+.0 - 8.0 */
+    animation: mymove 3.5s;
+    animation-fill-mode: forwards;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: -700%;}
+    to {left: 40%;}
+}
+
+@keyframes mymove {
+    from {left: -700%;}
+    to {left: 40%;}
+}
+
+
+#myANIMATION2{
+    position: relative;
+    -webkit-animation: mymove2 3s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation: mymove2 3s;
+    animation-fill-mode: forwards;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove2 {
+    from {top: -500px;}
+    to {top: 275px;}
+}
+
+@keyframes mymove2 {
+    from {top: -500px;}
+    to {top: 275px;}
+}
+
+
+#myOpacity{
+    -webkit-animation: myopac 9s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation: myopac 9s;
+    animation-fill-mode: forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myopac {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+@keyframes myopac {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+#idmath{ color:green;};
+
+#top_bar{    
+  width: 100%;
+ /* padding-top: 100%;  1:1 Aspect Ratio */
+}
+  
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+	
+	 background-color:rgb(88,138,231);
+	 font-size:large; 
+	 font-weight:bold;
+	 font-style:italic; 
+	 color:#f0f0f0;
+	 border-style:solid;
+	 border-color:white;
+	 border-width:5px;
+	 background-image: linear-gradient(to bottom,rgb(88,138,255),rgb(221,243,255) 61%, rgb(88,138,255));
+	 -webkit-box-shadow: 6px 6px 5px #ccc;
+	-moz-box-shadow: 6px 6px 5px #ccc;
+	box-shadow: 6px 6px 5px #ccc;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f0f0f0;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+	
+	 background-color:rgb(88,138,231);
+		font-size:large; 
+	 font-weight:bold;
+	 font-style:italic; 
+	 color:#f0f0f0;
+	 border-style:solid;
+	 border-color:white;
+	 border-width:5px;
+	 background-image: linear-gradient(to bottom,rgb(88,138,255),rgb(221,243,255) 61%, rgb(88,138,255));
+	 -webkit-box-shadow: 6px 6px 5px #ccc;
+	-moz-box-shadow: 6px 6px 5px #ccc;
+	box-shadow: 6px 6px 5px #ccc;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f0f0f0;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 3em;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.myheaderclass {
+	font-size:3em;
+	text-align:left;
+	font-family: Cambria, 'Hoefler Text', 'Nimbus Roman *No9 L Regular', Times, 'Times New Roman', serif,'Arial Black',sans-serif;
+	color:white; 
+	font-style:italic;
+	margin-top:0.15em;
+	margin-bottom:0.5em;
+	padding-left:12%;
+	z-index:1;
+}
+
+.pointerCursor {
+	cursor : pointer;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+	flex-direction: row;
+	margin: auto;
+}
+
+.flex-item {
+    margin: 10px;
+	max-width:37%;
+}
+
+.float-left {
+	float: right;
+	max-width:400px;
+	max-heigth:300px;
+	display:inline-block;
+}
+
+
+.my-img {
+display:inline;
+border-radius:1.5em;
+margin:auto;
+object-fit: contain;
+box-sizing:border-box;
+max-width:95%;
+}
+
+.contain {object-fit: contain;}
+
+
+.mi_marco{
+max-width:47%;
+border-color: white;
+border-display: solid;
+border-width:0px;
+border-radius:1em;
+padding:0.1em;
+/*padding-bottom:2em;*/
+margin:0.3em;
+/*max-height:attr(width)px;*/
+/*max-width:40%;*/
+-moz-box-shadow: 6px 6px 5px #ccc;
+box-shadow: 6px 6px 5px #ccc;
+box-sizing: border-box;
+}
+
+
+.my_flex_parent {
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;	
+justify-content:space-around;
+align-items: center;
+align-content: flex-start;
+}
+
+
+.flex_parent {
+   display: flex;
+   flex-direction: row-reverse;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: baseline;
+   align-content:space-around;
+}
+
+/* Gradient style */
+.blue-green-grad {
+	background: blue; /* fallback for browsers that do not support gradients */   
+	background: linear-gradient(-45deg, #99ffdd,#99ccff); /* Standard syntax (must be last) */	
+    background: -webkit-linear-gradient(-35deg, rgb(221,243,255),#99ccff,#99ccff, #99ffdd, #99ffdd, rgb(221,243,255),#dcf9a1);
+    background: -o-linear-gradient(-45deg, #99ffdd,#99ccff, #99ffdd,  #e6ffb3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-45deg, #99ffdd,#99ccff, #99ffdd,  #e6ffb3); /* For Firefox 3.6 to 15 */
+}
+
+/* defaults for pseudo-grid display */
+/* 	RESPONSIVE LAYOUT --> https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column pic {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+
+  .column {
+    flex: 95%;
+    max-width: 95%;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+  .column {
+    flex: 95%;
+    max-width: 95%;
+  }
+  .notinsmall {
+	display: none;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+  .column {
+    flex: 95%;
+    max-width: 95%;
+  }
+    .notinsmall {
+	display: none;
+  }
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+/* Styles */
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Tablets (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Tablets (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+   .notinsmall {
+	display: none;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhones----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+
+  .column {
+    flex: 95%;
+    max-width: 95%;
+  }
+      .notinsmall {
+	display: none;
+  }
+}
+
