@@ -10,11 +10,11 @@ my_body{
 	background-size: cover;
 	background-color: lightgray; /* for browsers without support for gradients*/
 	background: -webkit-radial-gradient(100% 100%, farthest-corner,white, lightgray ); /* Safari 5.1 to 6.0 */
-    background: -o-radial-gradient(100% 100%, farthest-corner,white, lightgray ); /* For Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(100% 100%, farthest-corner,white, lightgray ); /* For Firefox 3.6 to 15 */
-    background: radial-gradient(farthest-corner at 100% 100%,white, lightgray ); /* Standard syntax (must be last) */
+        background: -o-radial-gradient(100% 100%, farthest-corner,white, lightgray ); /* For Opera 11.6 to 12.0 */
+        background: -moz-radial-gradient(100% 100%, farthest-corner,white, lightgray ); /* For Firefox 3.6 to 15 */
+        background: radial-gradient(farthest-corner at 100% 100%,white, lightgray ); /* Standard syntax (must be last) */
 	background-repeat: no-repeat;
-    background-attachment: fixed;
+        background-attachment: fixed;
 	position:absolute;
 }
 
@@ -112,13 +112,13 @@ a.blue { color: rgb(88,138,231)}
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
-    from {left: -700%;}
-    to {left: 40%;}
+    from {left: -700px;}
+    to {left: 40px;}
 }
 
 @keyframes mymove {
-    from {left: -700%;}
-    to {left: 40%;}
+    from {left: -700px;}
+    to {left: 40px;}
 }
 
 
