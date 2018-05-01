@@ -5,6 +5,8 @@ this is the web site - Sergio González Collado
 
 the web address is: http://sergiocollado.github.io
 
+On deviart: https://sergiocollado.deviantart.com/gallery/ : )
+
 
 # SERGIO GONZÁLEZ COLLADO
 
