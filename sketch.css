@@ -22,6 +22,7 @@ my_body{
 .icon-bar {
   position: fixed;
   top: 50%;
+  rigth: 0%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
