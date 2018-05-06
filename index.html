@@ -1,326 +1,362 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+
+<html style="width:100%; height:100%; margin: 0; padding: 0; data-version:1;">
+
 <head>
-<meta charset="utf-8"/>	
+
+<meta charset="UTF-8"/>	
 <meta name="description" content="Sergio Gonzalez Collado Web Page">
-<meta name="keywords" content="Sergio, Sergio Collado, Sergio Gonzalez Collado, Sergio González Collado, Engineer, Engineer Web Site, Engineeer website, Engineering, Ingeniero, Ingeneur, Pagina web de un ingeniero, Engineer Portfolio">
-<meta name="author" content="Sergio, Sergio Collado, Sergio Gonzalez Collado, Sergio González Collado">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="robots" content="index, follow">
-<meta name="revisit-after" content="1 month">
-<meta name="rating" content="safe for kids">
-<meta name="rating" content="general">
-	
-<!-- [if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<!-- [endif] -->
-
-<!-- Always test the webs against tools as CSS Lint, and preproccesors as SASS and LESS -->
-
-<title>Sergio's web</title>
-	
-<script src="tagcanvas.js" type="text/javascript"></script>
- <script type="text/javascript">
-  window.onload = function() {
-    try {	
-     /* TagCanvas.Start('theCanvas','weightTags',{textFont:null, textColour:null, weight: true, radiusX :'0.8', 
-	radiusY:'0.8',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'} ); */
-     TagCanvas.Start('theCanvas','weightTags',{shape:'hring',lock:'x', textFont:null, textColour:null,
-     weight: true, radiusX :'0.9', radiusY:'0.9',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1' } );
-    }
-    catch(e) 
-    {
-    // something went wrong, hide the canvas container
-    document.getElementById('theCanvas').style.display = 'none';  
-    console.log("error w/ canvas: " + e);
-    } 
-  };
-	
-	function Vcylinder() {
-	 console.log("function: Vcylinder()");
-	    try {
-      TagCanvas.Start('theCanvas','weightTags',{shape:'vcylinder', lock:'z',lock:'y',textFont:null, textColour:null,
-	weight: true, radiusX :'0.9', radiusY:'0.9',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'
-	  } );
-	  
-	  }
-	  catch(e) 
-	  {
-      // something went wrong, hide the canvas container
-      document.getElementById('theCanvas').style.display = 'none';  
-      console.log("error w/ canvas: " + e);
-	  }
-	};
-	
-		function Hcilinder() {
-	    try {
-      TagCanvas.Start('theCanvas','weightTags',{shape:'hcylinder',lock:'x', textFont:null, textColour:null,
-	weight: true, radiusX :'0.9', radiusY:'0.9',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'} );
-	  
-	  }
-	  catch(e) 
-	  {
-      // something went wrong, hide the canvas container
-      document.getElementById('theCanvas').style.display = 'none';  
-      console.log("error w/ canvas: " + e);
-	  }
-	};
+<meta name="keywords" content="Sergio, Sergio Collado, Sergio Gonzalez Collado, Sergio González Collado, Sergio G. Collado, Sergio G Collado, SergioCollado, Sergio_Collado, Engineer, engineer, maths, physics, matemáticas, matematicas, física, fisica, tecnología, tech, technology, ciencia, science">
+<meta name="author" content="Sergio González Collado, Sergio Gonzalez Collado, SergioCollado, Sergio, Sergio Collado, Sergio Gonzalez Collado, Sergio González Collado, Sergio G. Collado, Sergio G Collado, SergioCollado, Sergio_Collado">
+<meta name="view-port" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-		function hring() {
-		console.log("enter hring");
-	    try {
-      TagCanvas.Start('theCanvas','weightTags',{shape:'hring',lock:'x', textFont:null, textColour:null, weight: true, radiusX :'0.9', radiusY:'0.9',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'
-	  } );
-	  
-	  }
-	  catch(e) 
-	  {
-      // something went wrong, hide the canvas container
-      document.getElementById('theCanvas').style.display = 'none';  
-      console.log("error w/ canvas: " + e);
-	  }
-	};
+<!--  meta tags, to use in social media. Reference at: http://ogp.me/ -->
+<meta property="og:title" content="Sergio González Collado" />
+<meta property="og:type" content="website"  />
 
-function sphere() {
-    try {	
-      TagCanvas.Start('theCanvas','weightTags',{shape:'sphere',textFont:null, textColour:null, weight: true,
-	radiusX :'0.8', radiusY:'0.8',initial: [0.22,0.12], decel: '0.99', outlineRadius: '10',zoom:'1.2'} );
-	  }
-	  catch(e) 
-	  {
-      // something went wrong, hide the canvas container
-      document.getElementById('theCanvas').style.display = 'none'; 
-      console.log("error w/ canvas: " + e);		  
-	  } 
-	};
+<title>Sergio's Website</title>
 
 
-/*	
-	function DblHelixfun()
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+<!-- CSS Reset
+<!-- END css RESET-->
+<!-- from https://cdnjs.com/libraries/meyer-reset -->
+
+<!-- CSS STYLES -->
+<link rel="stylesheet" type="text/css" href="sketch.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- EXPECT THE UNEXPECTED -->
+<noscript>Your browser does not support JavaScript!</noscript>
+
+<!-- JAVASCRIPTS TO BE REMOVEDDD--->
+<!-- consider using tags: async or/and defer -->
+
+<script type="text/javascript">
+bencier_canvas = function(){
+
+var Bcanvas = document.getElementById("theBencierCanvas");
+
+	if(Bcanvas.getContext) //checks if the canvas & command exists.
 	{
-	console.log("enter dblhelixfun");
-	try{
-	
-	TagCanvas.Start('theCanvas','weightTags', {
-      shape:'sphere'
-    });
-	} catch(e) {
-	console.log("error w/ canvas: " + e);
+	var ctx = Bcanvas.getContext('2d');
+
+
+		
+		var B_w= Bcanvas.width;
+		var B_h = Bcanvas.height;
+		
+		//ctx.strokeStyle="#FF0000"; //all red
+		ctx.lineWidth= 1;
+		ctx.strokeStyle = "rgb(255,255,255)";
+		ctx.fillStyle = "rgba(0,0,0,0.01)";
+		 
+		ctx.beginPath();
+		
+		var count_x =0, count_y = 0;
+		
+		for (var i = 0;  i < 6; i++ )
+		{
+		ctx.moveTo(0,0.5*B_h + count_y); //start at bottom-left
+		ctx.quadraticCurveTo( 0.4*B_w + count_x, 1.25*B_h  + count_y, 0.55*B_w + count_x, 0.95*B_h + count_y);
+		ctx.quadraticCurveTo( 0.9*B_w + count_x, -0.2*B_h  + count_y, B_w+ count_x, 0.2*B_h + count_y);
+		ctx.stroke();
+		
+		count_x += 5;
+		count_y += 7;
+		}
+		
+		//console.log("Bencier curves launched");
 	}
+
+
 };
 
-function DblHelix() {
- console.log("enger DblHelix()!");
-  var n=15; var rx=1; var ry=1; var rz=1;
-  var a = Math.PI / n, i, j, p = [], z = rz * 2 / n;
-  for(i = 0; i < n; ++i) {
-    j = a * i;
-    if(i % 2)
-      j += Math.PI;
-    p.push([rx * Math.cos(j), rz - z * i, ry * Math.sin(j)]);
-  }
-  console.log("p:" + p );
-  
-  return p;
-};
-*/
- </script>
-	
-	
-	
-<!--
-<link rel="stylesheet" href="mycss.css">
--->
-<style type="text/css">
 
-ul.weighted {
- float: left;
- display: block;
- overflow: auto;
- padding: 20px;
- margin: 0 10px 20px 0;
- background-color: #fff;
- border: 4px solid #aaa;
- border-radius: 20px;
- -moz-border-radius: 20px;
-}
-ul.weighted li { display: inline }
-ul.weighted li a { margin: 2px }
-.centred p { width: 320px; float: left; margin-left: 20px }
-.preright { float: left }
-.huge { font-family: Impact,sans-serif; font-size: 66px }
-.large { font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif; font-size: 50px }
-.medium { font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace; font-size: 28px }
-.small { font-family: Georgia,sans-serif; font-size: 23px }
-a.red { color: rgb(255,128,0) }
-a.green { color: rgb(168,242,57) }
-a.purple { color: rgb(244,233,19) }
-a.lightblue { color: rgb(159,207,255)}
-a.blue { color: rgb(88,138,231)}
+window.onload = function() {
+	try 
+	{
+	  TagCanvas.Start('theCanvas','weightTags',{shape:'hring',lock:'x', textFont:null, textColour:null, weight: true, radiusX :'1', radiusY:'1.1',initial: [0.22,0.12], decel: '0.99', outlineRadius: '9',zoom:'1'} );
+	  console.log("canvas launched");
+	  
+	  bencier_canvas();
+	  
+	}
+	catch(e) 
 
-	
- /* Tooltip container */
-.tooltip {
-    /*position: relative;*/
+	{
+		// something went wrong, hide the canvas container
+		console.log(e);
+		document.getElementById('theCanvas').style.display = 'none';  
+	} 
+};  //end window.onload.
 
-    display: inline-block;
-     /* border-bottom: 1px dotted black;If you want dots under the hoverable text */
+function openNav() {
+	SwitchNav();
 }
 
-/* Tooltip text */
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: #fff;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #555;
-    color: #555;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-
-    /* Position the tooltip text*/
-    position: absolute;
-    z-index: 1;
-    bottom: 110%;
-    left: 50%;
-    margin-left: -60px;
-	/*position: relative*/
-
-    /* Fade in tooltip */
-    opacity: 0;
-    transition: opacity 1s;
+function closeNav() {
+    SwitchNav();
 }
 
-/* Tooltip arrow */
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
+function SwitchNav(){
+	if(document.getElementById("mySidenav").style.width != "250px")
+	{
+		document.getElementById("mySidenav").style.width = "250px";
+	}
+	else
+	{
+	document.getElementById("mySidenav").style.width = "0px";
+	}
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
 
-	
-#myANIMATION{
-    position: relative;
-    -webkit-animation: mymove 3.5s;  /* Safari 4.0 - 8.0 */
-    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
-    animation: mymove 3.5s;
-    animation-fill-mode: forwards;
-}
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    from {left: -700px;}
-    to {left: 875px;}
-}
+window.onpageshowXXX = function() {
+var Lcanvas = document.getElementById("lateralCanvas");
+     ctx = Lcanvas.getContext('2d');
+     width = Lcanvas.width;
+     height = Lcanvas.height;
+     lines = []
+     cycle = 9;
 
-@keyframes mymove {
-    from {left: -700px;}
-    to {left: 875px;}
-}
+ //canvas.width = width;
+ //canvas.height = height;
 
-#myOpacity{
-    -webkit-animation: myopac 7s;  /* Safari 4.0 - 8.0 */
-    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
-    animation: myopac 7s;
-    animation-fill-mode: forwards;
-}
+ ctx.strokeStyle = "rgb(255,255,255)";
+ ctx.fillStyle = "rgba(0,0,0,0.01)";
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes myopac {
-    from {opacity:0;}
-    to {opacity:1;}
-}
 
-@keyframes myopac {
-    from {opacity:0;}
-    to {opacity:1;}
-}
+ function init() {
+     lines = [];
+     for (var i = 0; i < 3; i++) {
+         newLine();
+     }
+	  render();
+ }
 
-#idmath{ color:green;}
-	
-	
-.blue-green-grad {
-    /* gradient-angle-defined*/
-    background: blue; /* For browsers that do not support gradients */    
-    background: -webkit-linear-gradient(-45deg, #99ffdd,#99ccff, #99ffdd,  #e6ffb3); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(-45deg, #99ffdd,#99ccff, #99ffdd,  #e6ffb3); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(-45deg, #99ffdd,#99ccff, #99ffdd,  #e6ffb3); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(-45deg, #99ffdd,#99ccff, #99ffdd,  #e6ffb3); /* Standard syntax (must be last) */
-    position: absolute;
-}
-</style>
+ function newLine() {
+     lines.push({
+         x1: width / 2,
+         y1: 0,
+        cp1x: width / 2 - Math.random() * width / 4,
+         cp1y: height / 2 - Math.random() * height / 4,
+         cp2x: width - Math.random() * 3*width/4,
+         cp2y: height - Math.random() * 3*height/4,
+         x2: width - Math.random() * width,
+         y2: -height / 2,
+         rotation: Math.random() * 360,
+         angle1: Math.random() * 10,
+         angle2: Math.random() * 10,
+         angle3: Math.random() * 10
+     });
+ }
+
+ function render() {
+     ctx.strokeStyle = colorCycle();
+
+     for (var i = 0; i < lines.length; i++) {
+         var line = lines[i];
+         line.cp1x += Math.sin(line.angle1 += 0.005);
+         line.cp1y += Math.sin(line.angle1);
+
+         line.cp2y -= Math.sin(line.angle2 -= 0.005);
+         line.cp2x -= Math.sin(line.angle2);
+
+         line.x1 -= Math.sin(line.angle3 += 0.005);
+         line.y1 -= Math.sin(line.angle3);
+
+         line.x2 -= Math.sin(line.angle3 += 0.005);
+         line.y2 -= Math.sin(line.angle3);
+
+         ctx.save();
+         ctx.beginPath();
+         ctx.moveTo(line.x1, line.y1);
+         ctx.bezierCurveTo(line.cp1x, line.cp1y, line.cp2x, line.cp2y, line.x2, line.y2);
+         ctx.stroke();
+
+         ctx.restore();
+     }
+
+     requestAnimationFrame(render);
+ }
+
+ function colorCycle() {
+     cycle += .01;
+     if (cycle > 100) {
+         cycle = 0;
+     }
+
+     var r = Math.floor(Math.sin(.3 * cycle + 0) * 127 + 128),
+         g = Math.floor(Math.sin(.3 * cycle + 2) * 127 + 128),
+         b = Math.floor(Math.sin(.3 * cycle + 4) * 127 + 128),
+         a = Math.random() * 1;
+     return "rgba(" + r + "," + g + "," + b + "," + 0.1 + ")";
+ }
+
+ init();
+ }
+</script> 
+
 
 </head>
-<body style="border:1px; border-color:black; font-family:sans-serif; font-size:20px; width:600px; height:600px;
-	/*background-size: contain;  Scale to the largest size*/
-	background-color: lightgray; /* for browsers without support for gradients*/
-	background: -webkit-radial-gradient(100% 100%, farthest-corner,white, lightgray /* , white */); /* Safari 5.1 to 6.0 */
-   	background: -o-radial-gradient(100% 100%, farthest-corner,white, lightgray /* , white */); /* For Opera 11.6 to 12.0 */
-   	background: -moz-radial-gradient(100% 100%, farthest-corner,white, lightgray /* , white */); /* For Firefox 3.6 to 15 */
-        background: radial-gradient(farthest-corner at 100% 100%,white, lightgray /* , white */); /* Standard syntax (must be last) */
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-    >
+
+
+<body id="body" class="my_body">
 	
-<!-- background-color:#f0f0f0; -->
-<!-- background-color: rgb(255,255,245); -->
-<!-- https://www.w3schools.com/howto/default.asp -->
-<!-- https://www.w3schools.com/howto/howto_css_center_website.asp -->
+	
+	<noscript>Your browser does not support JavaScript!</noscript>
+	
+	
+	<!-- THE ROUND TOP-RIGHT NAVEGATION BUTTON -rgb(220,220,220) -->
+	<header id="menu" style="font-size:2.3em; line-height:1.1em; position:fixed; top:0.53em;right:3%; 
+	z-index:1000; background-color: #ccddff; border-width:7px; border-color:rgb(250,250,250);
+	padding:0px; 
+	border-radius:3vmax/3vmax;
+	color:white;
+	box-shadow: 5px 5px 5px #ccc;
+	box-sizing: border-box;
+	border: 0.1em white solid;	
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */	 
+	-ms-user-select: none;      /* IE 10+ */
+	/* No support for these yet, use at own risk */
+	-o-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	opacity:0.9;
+	max-width:5vmmax;
+	max-heigth:5vmax;
+	"  onmouseover="document.getElementById('menu').opacity=1;" onclick="openNav()" ><span style="border-width:0.7em;">&#9776;</span></header>
+	
+	<!-- THE LATERAL ANIMATION CANVAS todo: remove
+	<canvas id="lateralCanvas" style="
+	position: fixed;
+	padding:0px;
+	border-width:0px;
+	margin: 0px;
+	top:0px;
+	bottom:0px;
+	height:100%;
+	width:10%;
+	z-index:1;
+	float:left;">This brownser doesn't support the canvas element.</canvas>
+	-->
+	
+	
 
-<div id="main" style="max-width:400px; margin:auto">
-
-<header id="my_top_bar" class="blue-green-grad" style="height:4%; width:99%;">
-<!--nothing -->
-</header>
+	
+	
+	<!-- THE LATERAL NAVIGATION PANEL -->
+	<div id="mySidenav" class="sidenav" style="z-index:5">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">Home</a>
+	  <a href="#">Fractals</a>
+	  <a href="#">Physics</a>
+	  <a href="#">Games</a>
+	<br>
+	<br>
+	<br>
+		
+			<!-- THE MEDIA FIXED PANNEL -->
+	
+	<div class="icon-bar">
+        <a href="https://developer.mozilla.org/es/profiles/Sergio_Gonzalez_Collado" class="blue"><i>MDN</i></a>
+        <a href="https://sergiocollado.deviantart.com/gallery/" class="green"><i> Da</i></a>
+	<a href="https://www.linkedin.com/in/sergiogonzalezcollado/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+	</div>
 	
 		
-	<div id="myANIMATION" style="position:relative; float:left; width:275px; top:230px; background-color:rgb(88,138,231); padding:1em; padding-right:1em; border-radius:10%/10%; font-size:large; font-weight:bold; font-style:italic; color:#f0f0f0; border-style:solid; border-color:white; border-width:10px; background-image: linear-gradient(to bottom,rgb(88,138,255),rgb(221,243,255) 66%, rgb(88,138,255));-webkit-box-shadow: 6px 6px 5px #ccc;
-	-moz-box-shadow: 6px 6px 5px #ccc;box-shadow: 6px 6px 5px #ccc;">
-
-		<div class="tooltip" style="float:right; position:relative; top:20px">
-		<img src="Ser_icon.png" > 
-		<span class="tooltiptext"> Hi there! </span>
-		</div>
-
-	<p > <span style="color:yellow">Hi there!</span> <br> I'm a nice guy who enjoys with 
-	<span onmouseover='Vcylinder()' style="color:rgb(255,128,0)" > maths </span>,  
-	<span onmouseover="Hcilinder()" style="color: rgb(168,242,57)">science</span>,
-	<span onmouseover="hring()" style="color:blue"> technology</span> and 
-	<span onmouseover="sphere()" style="color:yellow">engineering</span>.</p>
 	</div>
+       <!-- End of THE LATERAL NAVIGATION PANEL -->
 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <ul style="list-style-image:none">
+	<li><a href="sierpinski.html" >Sierpinski</a></li>
+	<li><a href="Newton's_Cannon.html">Newton's Cannon</a></li>
+	<li><a href="gosper.html">Gosper</a></li>	
+	<li><a href="koch.html">Koch fractal</a></li>
+	<li><a href="koch_snowflake.html" >Koch snowflake</a></li>
+	<li><a href="bioengineering.html" >Bioengineering</a></li>
+	<li><a href="iterative_functions.html">Iterative function <br> fractals</a></li>
+	<li><a href="tree.html" >Fractal Tree</a></li>
+	<li><a href="leaf.html">Barnsley Fern</a></li>
+	<li><a href="DLA.html" >Difusion<br>Limited<br>Aggregation</a></li>
+	<li><a href="mandelbrot.html" >Mandelbrot</a></li>
+	<li><a href="julia.html" >Julia sets</a></li>
+	<li><a href="lorenz.html">Lorenz attractor</a></li>
+	<li><a href="hilbert.html">Hilbert</a></li>
+	<li><a href="Fourier.html" >Fourier</a></li>
+	<li><a href="Matching_game.html" class="green medium">Matching <br> game</a></li>
+  </ul>
+<!-- http://www.w3schools.com/howto/howto_js_sidenav.asp -->
+</div>
 
-	<div id="myANIMATION2" style="position:relative; float:left; width:275px; top:270px; left: 450; background-color:rgb(88,138,231); padding:1em; padding-right:1em; border-radius:10%/10%;font-family:Cambria, 'Hoefler Text', 'Nimbus Roman *No9 L Regular', Times, 'Times New Roman', serif; font-size:large; font-weight:bold; font-style:italic; color:rgb(88,138,255); border-style:solid; border-color:rgb(215,215,215); background-color:white; border-width:10px;-webkit-box-shadow: 6px 6px 5px #ccc;
-	-moz-box-shadow: 6px 6px 5px #ccc;box-shadow: 6px 6px 5px #ccc;">
-		Table of Contents
-	</div>
-
-
-	<div id="myOpacity" style="position:relative;"> 
-		<canvas  id="theCanvas" width="1400" height="900" style="position: absolute; left:100px; width:100%; top:30px">
+	
+	<div id="myheader" class="myheaderclass blue-green-grad pointerCursor " style="z-index:2; min-height:11vh;">
+	<span style="z-index:4;">Sergio González Collado</span>
+		<canvas  id="theBencierCanvas" style="position:absolute; left:0px; min-width:100vw; min-width:100%;  max-width:100%; max-width:100vw; max-height:11vh; ; z-index:3;" onload="bencier_canvas();">
 		Canvas not supported; please update your browser.
 		</canvas>
-	</div>	
+	</div>
+	
+
+<div id="main" style="
+	margin:auto;
+	padding:0px;
+	padding-left:2%;
+	border-width: 1px;
+	border-left-style: solid;
+	border-left-width:1px;
+	border-style: none;
+	border-left: solid;
+	border-color:white;
+	padding-right:0%;
+	padding-bottom:0px;
+	border-bottom:0px;
+	border-left: 1px solid white;
+	width:auto;
+	max-width:70%;">
 
 
-	<div class="centred" >
-	<ul class="weighted" style="font-size: 100%" id="weightTags">
+	<div id="presentation" style="width:100%; display:block;">
+			
+				<div id="myANIMATION" style="float:right; max-width:30%;
+					background-color:rgb(88,138,231);
+					padding:1em; 
+					padding-right:1.5em;
+					border-radius:1.2em/1.2em;
+					font-size:large; font-weight:bold; font-style:italic; color:#f0f0f0; border-style:solid; border-color:white; border-width:10px;
+					font-family: 'font-family:Cambria', 'Hoefler Text', 'Nimbus Roman *No9 L Regular', Times, 'Times New Roman', serif;
+					background-image: linear-gradient(to bottom,rgb(125,138,255) 55%,rgb(221,243,255));
+					-webkit-box-shadow: 6px 6px 5px #ccc;
+					-moz-box-shadow: 6px 6px 5px #ccc;
+					box-shadow: 6px 6px 5px #ccc;
+					margin:auto; margin-right:1.5em;">
+
+						<div class="tooltip" style="align:right; float:right; position:relative; top:20px">
+							<img src="Ser_icon.png" > 
+							<span class="tooltiptext"> Hi there!</span>
+						</div>	 
+
+						<p style="font-family:Cambria, 'Hoefler Text', 'Nimbus Roman *No9 L Regular', Times, 'Times New Roman', serif;"; > 
+						<span style="color:yellow">Hi there!</span> <br> I'm a nice guy who enjoys with <span onmouseover='Vcylinder()' > maths </span><span >,</span>  <span onmouseover="Hcilinder()">science</span> <span >,</span> <span onmouseover="hring()"> technology</span> and <span onmouseover="sphere()" >engineering</span><span >.</span> </p>
+						
+				</div>
+
+				
+				<!-- ROTATION-TURNNING MENU -->
+				<span id="myOpacity"> 
+					<canvas  id="theCanvas" class='notinsmall'  width="680" height="400" style="max-width:55%; max-height:65%; margin:0%;top:3%;">
+					Canvas not supported; please update your browser.
+					</canvas>
+				</span>	
+			
+	
+	</div> <!--  id="presentation"> -->
+	
+<ul class="weighted" style="font-size: 100%" id="weightTags">
 		<li><a href="sierpinski.html" class="green huge">Sierpinski</a></li>
 		<li><a href="Newton's_Cannon.html" class="purple huge" style="font-family:Cambria, 'Hoefler Text', 'Nimbus Roman *No9 L Regular', Times, 'Times New Roman', serif;">Newton's Cannon</a></li>
 		<li><a href="gosper.html" class="green small">Gosper</a></li>	
@@ -339,87 +375,204 @@ a.blue { color: rgb(88,138,231)}
 		<!--<li><a href="optic_fiber.html" class="green medium" style="font-family: Constantia, 'Lucida Bright', serif; font-size:27px;">Optic<br>fiber</a></li> -->
 		<li><a href="Fourier.html" class="blue huge" style="font-family:'Arial Black',sans-serif; font-style:italic;">Fourier</a></li>
 		<li><a href="Matching_game.html" class="green medium">Matching <br> game</a></li>
-		<!--<li><a href="games.html" class="blue medium">Games</a></li>-->
-		<!-- 	<li><a href="#" class="blue small">DAB</a></li>
-		<li><a href="#" class="blue small">Reed Solomon</a></li>
-		<li><a href="#" class="blue large">Vittervi</a></li>
-		<li><a href="#" class="blue medium">Pseudorandom functions</a></li>
-		<li><a href="#" class="blue small">Voltage regulator circuits</a></li>
-		<li><a href="#" class="blue huge">Birthday paradox</a></li>
-		<li><a href="#" class="red medium">Basics of circuit simulation</a></li>
-		<li><a href="#" class="red small">Lernpacket kit</a></li>
-		<li><a href="#" class="red medium">Electrodynamics</a></li>
-		<li><a href="#" class="red small">Joule thief</a></li>
-		<li><a href="#" class="red large">DIY *****oscilloscope</a></li>
-		<li><a href="#" class="red medium">AM/FM radio kit</a></li>
-		<li><a href="#" class="red small">Earth magnentism</a></li>
-		<li><a href="#" class="red large">Tiny Tesla</a></li>
-		<li><a href="#" class="red medium">Robot Arm</a></li>
-		<li><a href="#" class="lightblue medium">Tetris game</a></li>
-		<li><a href="#" class="lightblue medium">Galaxy</a></li>
-		<li><a href="#" class="lightblue small">Face recognition system</a></li>
-		<li><a href="#" class="green large">Inverted pendulum</a></li>
-		<li><a href="#" class="green small">Steganography</a></li>
-		<li><a href="#" class="green medium">2D particle simulation</a></li>
-		<li><a href="#" class="green small">Game of life</a></li>
-		<li><a href="#" class="green huge">animal guessing <br> game</a></li>
-		<li><a href="#" class="green small">bridge building</a></li>
-		<li><a href="#" class="green medium">Sudoku</a></li>
-		<li><a href="#" class="purple small">Colective intelligence</a></li>
-		<li><a href="#" class="green huge"><span style="color: "green"; font-family: 'Lucida Console',Monaco,monospace>About Me</span></a></li>
-		<li><a href="#" class="purple medium">Maze</a></li>
-		<li><a href="#" class="purple huge"><span style="color: green; font-family: 'Lucida Console',Monaco,monospace">tag</span></a></li>
-		<li><a href="#" class="purple medium">Liquid simulation</a></li>
-		<li><a href="#" class="purple medium">VCOs</a></li>
-		<li><a href="#" class="purple medium">Tetris</a></li>
-		<li><a href="#" class="green small">Blender 3D Car</a></li>
-		<li><a href="#" class="green medium">Fractals</a></li>
-		<li><a href="#" class="purple huge">Computer Chess</a></li>
-		<li><a href="#" class="purple small">Strange attractors</a></li>
-		<li><a href="#" class="purple large"><span style="color: "green"; font-family: 'Lucida Console',Monaco,monospace>Console Emulator</span></a></li>
-		<li><a href="#" class="red large">LED Cube</a></li>
-		<li><a href="#" class="red medium">Computational aerodinamcs</a></li>
-		<li><a href="#" class="lightblue medium">Electric Gun</a></li>
-		<li><a href="#" class="green huge">Plasma simulation</a></li>
-		<li><a href="#" class="green small">Gingerman</a></li>
-		<li><a href="#" class="green medium">Bioengineering</a></li>
-		li><a href="#" class="green medium">Sudoku</a></li>
-		<li><a href="#" class="green small">Game of life</a></li>  
-		<li><a href="#" class= "" > Maze</a></li>-->
-	</ul>
-	</div>
+		
+<!--  <h2>Table of contents</h2>
+<ul >
+	<li><a href="sierpinski.html" class="green ">Sierpinski</a></li>
+	<li><a href="Newton's_Cannon.html" class="purple" style="font-family:Cambria, 'Hoefler Text', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;">Newton's Cannon</a></li>
+	<li><a href="gosper.html" class="green">Gosper</a></li>	
+	<li><a href="koch.html" class="blue">Koch fractal</a></li>
+	<li><a href="koch_snowflake.html" class="blue ">Koch snowflake</a></li>
+	<li><a href="bioengineering.html" class="red">Bioengineering</a></li>
+	<li><a href="iterative_functions.html" class="green">Iterative function <br> fractals</a></li>
+	<li><a href="tree.html" class="purple" >Fractal Tree</a></li>
+	<li><a href="leaf.html" class="red" style="font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', Georgia, serif;">Barnsley Fern</a></li>
+	<li><a href="DLA.html" class="blue">Difusion<br>Limited<br>Aggregation</a></li>
+	<li><a href="mandelbrot.html" class="blue" style="font-family:'Arial Black',sans-serif; font-style:italic;">Mandelbrot</a></li>
+	<li><a href="julia.html" class="purple" style="font-family: 'Lucida Grande','Lucida Sans Unicode', 'Lucida Sans','Liberation Sans', Verdana, sans-serif;">Julia sets</a></li>
+	<li><a href="lorenz.html" class="blue">Lorenz attractor</a></li>
+	<li><a href="hilbert.html" class="green">Hilbert</a></li>
+	<li><a href="Fourier.html" class="blue" style="font-family:'Arial Black',sans-serif; font-style:italic;">Fourier</a></li>
+	<li><a href="Matching_game.html" class="green">Matching <br> game</a></li>
+	<li><a href="games/game01/game01.html" class="purple" >Me vs. Crabs</a></li>
+</ul>-->
 
-	<!-- 
-	<h2>Table of contents</h2>
-	<ul >
-		<li><a href="sierpinski.html" class="green ">Sierpinski</a></li>
-		<li><a href="Newton's_Cannon.html" class="purple" style="font-family:Cambria, 'Hoefler Text', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;">Newton's Cannon</a></li>
-		<li><a href="gosper.html" class="green">Gosper</a></li>	
-		<li><a href="koch.html" class="blue">Koch fractal</a></li>
-		<li><a href="koch_snowflake.html" class="blue ">Koch snowflake</a></li>
-		<li><a href="bioengineering.html" class="red">Bioengineering</a></li>
-		<li><a href="iterative_functions.html" class="green">Iterative function <br> fractals</a></li>
-		<li><a href="tree.html" class="purple" >Fractal Tree</a></li>
-		<li><a href="leaf.html" class="red" style="font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', Georgia, serif;">Barnsley Fern</a></li>
-		<li><a href="DLA.html" class="blue">Difusion<br>Limited<br>Aggregation</a></li>
-		<li><a href="mandelbrot.html" class="blue" style="font-family:'Arial Black',sans-serif; font-style:italic;">Mandelbrot</a></li>
-		<li><a href="julia.html" class="purple" style="font-family: 'Lucida Grande','Lucida Sans Unicode', 'Lucida Sans','Liberation Sans', Verdana, sans-serif;">Julia sets</a></li>
-		<li><a href="lorenz.html" class="blue">Lorenz attractor</a></li>
-		<li><a href="hilbert.html" class="green">Hilbert</a></li>
-		<li><a href="doppler.html" class="green" style="font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', Georgia, serif;">doppler<br>effect</a></li>
-		<li><a href="optic_fiber.html" class="green" style="font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Liberation Serif', Georgia, serif;">Optic<br>fiber</a></li>
-		<li><a href="Fourier.html" class="blue" style="font-family:'Arial Black',sans-serif; font-style:italic;">Fourier</a></li>
-		<li><a href="Matching_game.html" class="green">Matching <br> game</a></li>
-		<li><a href="games/game01/game01.html" class="purple" >Me vs. Crabs</a></li> 
-	</ul>
-	-->
+	<br>
+	<div style="clear:both;"> Below some of my personal projets ... </div>
+	 <!-------IMAGE GALLERY ---------------------------->
+    <!-------------------------------------------------> 
+	<br>
+	<div>
+    <div id="my_flex_container" class="my_flex_parent" style="padding-top:3em; clear:both"> 
+      
+		  <!-- Here goes the thumbimages of the projects -->
+	  
+		<div class="mi_marco">
+			  <a href="https://sergiocollado.deviantart.com/art/my-robot-arm-prototype-728508707" target="_self">
+			  <figure>
+				<img  class="my-img" src="./img/my_robo_Sergio_Gonzalez_Colladot.PNG" alt="SUPER ROBOT">
+				<figcaption>
+				   <p>A robot I designed and prototyped long ago</p>
+				 </figcaption>
+			   </figure>
+			  </a>
+		 </div>	  
+		
+	    
+	    	
+		<div class="mi_marco">
+          <a href="bioengineering.html" target="_self">
+			<figure>
+            <img  class="my-img" src="./img/cristal.jpg" alt="quirurgic_aparatus">
+            <figcaption>
+              <p>A biomechanical implant I designed long ago </p>
+            </figcaption>
+			</figure>
+          </a>
+        </div>
+	    
 
+
+        <div class="mi_marco">
+          <a href="lorenz.html" target="_self">
+		<figure>
+			<img class="my-img" src="./img/lorenz_atractor.png" alt="lorenz_atractor" >
+			<figcaption>
+			<p>the Lorenz attractor animation</p>
+			</figcaption>
+		</figure>
+          </a>
+        </div>
+	    
+	    
+	    <div class="mi_marco">
+          <a href="DLA.html" target="_self">
+		  <figure>
+		    <img  class="my-img" src="./img/DLA2.PNG" alt="Diffusion Limited Aggregation">
+          <figcaption>
+              <p>Diffusion Limited Aggregation app</p>
+            </figcaption>
+			</figure>
+          </a>
+        </div>
+		
+
+ 
+		<div class="mi_marco">
+			  <a href="mandelbrot.html" target="_self">
+			  <figure>
+				<img  class="my-img" src="./img/mandelbrot_blue.png" alt="mandelbrot fractal">
+			 <figcaption>
+              <p>Mandelbrot fractal app</p>
+            </figcaption>
+			</figure>
+			  </a>
+		</div>	  
+		
+		<div class="mi_marco">
+          <a href="sierpinski.html" target="_self">
+		  <figure>
+            <img  class="my-img" src="./img/sierpenski.png" alt="sierpenski" style="background:LightYellow">
+          <figcaption>
+              <p>Sierpenski fractal</p>
+            </figcaption>
+			</figure>
+          </a>
+        </div>
+		
+
+		<div class="mi_marco">
+          <a href="Fourier.html" target="_self">
+			<figure>
+            <img  class="my-img" src="./img/fourier.png" alt="fourier series">
+            <figcaption>
+              <p>fourier series</p>
+            </figcaption>
+			</figure>
+          </a>
+        </div>
+		
+		
+
+        <div class="mi_marco">
+          <a href="julia.html" target="_self">
+		<figure>
+			<img class="my-img" src="./img/julia_set_2.PNG" alt="julia fractal set" >
+			<figcaption>
+			<p>Julia fractal sets app</p>
+			</figcaption>
+		</figure>
+          </a>
+        </div>
+
+     
+	<div class="mi_marco">
+          <a href="koch.html" target="_self">
+		<figure>
+			<img class="my-img" src="./img/koch.png" alt="koch fractal" >
+			<figcaption>
+			<p>koch fractal</p>
+			</figcaption>
+		</figure>
+          </a>
+        </div>
+	    
+	    
+	    	<div class="mi_marco">
+          <a href="Matching_game.html" target="_self">
+		<figure>
+			<img class="my-img" src="./img/match_game.PNG" alt="match game" >
+			<figcaption>
+			<p>matching game</p>
+			</figcaption>
+		</figure>
+          </a>
+        </div>
+	
+	    
+	  <div class="mi_marco">
+          <a href="iterative_functions.html" target="_self">
+		<figure>
+			<img class="my-img" src="./img/iterative_fun2.PNG" alt="iterative funticons" >
+			<figcaption>
+			<p>iterative functions</p>
+			</figcaption>
+		</figure>
+          </a>
+        </div>
+	    
+	    
+	  <div class="mi_marco">
+          <a href="tree.html" target="_self">
+		<figure>
+			<img class="my-img" src="./img/fractal_tree.png" alt="Fractal trees" >
+			<figcaption>
+			<p>fractal Trees</p>
+			</figcaption>
+		</figure>
+          </a>
+         </div> 
+	
+	    
+	    
+    </div>
+    </div>
+    </div>
+  
 	
 	
-	<footer id="my_boton_bar" class="blue-green-grad" style="height:4%; width:99%; bottom:0%";>
-	<!--nothing -->
-		<span style:"flat:left; color:white">𝓢ℯ𝓇ℊ𝒾ℴ 𝓖. 𝓒ℴ𝓁𝓁𝒶𝒹ℴ</span>
+	</div> <!--end div main -->
+
+		<br>
+		<br>
+		<br>
+	<!-- FOOTER -->
+	<footer id="my_bottom_bar" class="blue-green-grad" style="box-sizing: border-box; height:1.2rem; width:100%; bottom:0.9rem;
+	margin:0px; display:block;
+	padding:0px;";>
+		<span style="padding-left:3em; color:black; float:left; letter-spacing:-0.1em; border:none;">𝓢ℯ𝓇ℊ𝒾ℴ 𝓖. 𝓒ℴ𝓁𝓁𝒶𝒹ℴ</span>
 	</footer>
-</div> <!-- end id=main-->	
+
+	
 </body>
-</html>
+</html>	
