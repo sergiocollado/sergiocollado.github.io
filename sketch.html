@@ -230,10 +230,12 @@ var Lcanvas = document.getElementById("lateralCanvas");
 	cursor: pointer;
 	opacity:0.9;
 	max-width:5vmmax;
-	max-heigth:5vmax;
-	"  onmouseover="document.getElementById('menu').opacity=1;" onclick="openNav()" ><span style="border-width:0.7em;">&#9776;</span></header>
+	max-heigth:5vmax;"
+	onmouseover="document.getElementById('menu').opacity=1;" 
+	onclick="openNav()">   <span style="border-width:0.7em;">&#9776;  </span>
+	</header> <!-- End of tHE ROUND TOP-RIGHT NAVEGATION BUTTON -rgb(220,220,220) -->
 	
-	<!-- THE LATERAL ANIMATION CANVAS todo: remove
+	<!-- THE LATERAL ANIMATION CANVAS -- TODO remove
 	<canvas id="lateralCanvas" style="
 	position: fixed;
 	padding:0px;
@@ -248,9 +250,6 @@ var Lcanvas = document.getElementById("lateralCanvas");
 	-->
 	
 	
-
-	
-	
 	<!-- THE LATERAL NAVIGATION PANEL -->
 	<div id="mySidenav" class="sidenav" style="z-index:5">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -258,12 +257,10 @@ var Lcanvas = document.getElementById("lateralCanvas");
 	  <a href="#">Fractals</a>
 	  <a href="#">Physics</a>
 	  <a href="#">Games</a>
-	<br>
-	<br>
-	<br>
+	</div> <!-- End of THE LATERAL NAVIGATION PANEL -->
+      
 		
-			<!-- THE MEDIA FIXED PANNEL -->
-	
+	<!-- THE MEDIA FIXED PANNEL TODO:FIX THE CLASS-->
 	<div class="icon-bar">
         <a href="https://developer.mozilla.org/es/profiles/Sergio_Gonzalez_Collado" class="blue"><i>MDN</i></a>
         <a href="https://sergiocollado.deviantart.com/gallery/" class="green"><i> Da</i></a>
@@ -271,8 +268,7 @@ var Lcanvas = document.getElementById("lateralCanvas");
 	</div>
 	
 		
-	</div>
-       <!-- End of THE LATERAL NAVIGATION PANEL -->
+	
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -307,45 +303,44 @@ var Lcanvas = document.getElementById("lateralCanvas");
 	
 
 <div id="main" class="my_main">
-
-
+	
 	<div id="presentation" style="width:100%; display:block;">
-			
-				<div id="myANIMATION" style="float:right; max-width:30%;
-					background-color:rgb(88,138,231);
-					padding:1em; 
-					padding-right:1.5em;
-					border-radius:1.2em/1.2em;
-					font-size:large; font-weight:bold; font-style:italic; color:#f0f0f0; border-style:solid; border-color:white; border-width:10px;
-					font-family: 'font-family:Cambria', 'Hoefler Text', 'Nimbus Roman *No9 L Regular', Times, 'Times New Roman', serif;
-					background-image: linear-gradient(to bottom,rgb(125,138,255) 55%,rgb(221,243,255));
-					-webkit-box-shadow: 6px 6px 5px #ccc;
-					-moz-box-shadow: 6px 6px 5px #ccc;
-					box-shadow: 6px 6px 5px #ccc;
-					margin:auto; margin-right:1.5em;">
+		
+		<div id="myANIMATION" style="float:right; max-width:30%;
+			background-color:rgb(88,138,231);
+			padding:1em; 
+			padding-right:1.5em;
+			border-radius:1.2em/1.2em;
+			font-size:large; font-weight:bold; font-style:italic; color:#f0f0f0; border-style:solid; border-color:white; border-width:10px;
+			font-family: 'font-family:Cambria', 'Hoefler Text', 'Nimbus Roman *No9 L Regular', Times, 'Times New Roman', serif;
+			background-image: linear-gradient(to bottom,rgb(125,138,255) 55%,rgb(221,243,255));
+			-webkit-box-shadow: 6px 6px 5px #ccc;
+			-moz-box-shadow: 6px 6px 5px #ccc;
+			box-shadow: 6px 6px 5px #ccc;
+			margin:auto; margin-right:1.5em;">
 
-						<div class="tooltip" style="align:right; float:right; position:relative; top:20px">
-							<img src="Ser_icon.png" > 
-							<span class="tooltiptext"> Hi there!</span>
-						</div>	 
+				<div class="tooltip" style="align:right; float:right; position:relative; top:20px">
+					<img src="Ser_icon.png" > 
+					<span class="tooltiptext"> Hi there!</span>
+				</div>	 
 
-						<p style="font-family:Cambria, 'Hoefler Text', 'Nimbus Roman *No9 L Regular', Times, 'Times New Roman', serif;"; > 
-						<span style="color:yellow">Hi there!</span> <br> I'm a nice guy who enjoys with <span onmouseover='Vcylinder()' > maths </span><span >,</span>  <span onmouseover="Hcilinder()">science</span> <span >,</span> <span onmouseover="hring()"> technology</span> and <span onmouseover="sphere()" >engineering</span><span >.</span> </p>
-						
-				</div>
+				<p style="font-family:Cambria, 'Hoefler Text', 'Nimbus Roman *No9 L Regular', Times, 'Times New Roman', serif;"; > 
+				<span style="color:yellow">Hi there!</span> <br> I'm a nice guy who enjoys with <span onmouseover='Vcylinder()' > maths </span><span >,</span>  <span onmouseover="Hcilinder()">science</span> <span >,</span> <span onmouseover="hring()"> technology</span> and <span onmouseover="sphere()" >engineering</span><span >.</span> </p>
 
-				
-				<!-- ROTATION-TURNNING MENU -->
-				<span id="myOpacity"> 
-					<canvas  id="theCanvas" class='notinsmall'  width="680" height="400" style="max-width:55%; max-height:65%; margin:0%;top:3%;">
-					Canvas not supported; please update your browser.
-					</canvas>
-				</span>	
+		</div>
+
+
+		<!-- ROTATION-TURNNING MENU -->
+		<span id="myOpacity"> 
+			<canvas  id="theCanvas" class='notinsmall'  width="680" height="400" style="max-width:55%; max-height:65%; margin:0%;top:3%;">
+			Canvas not supported; please update your browser.
+			</canvas>
+		</span>	
 			
 	
-	</div> <!--  id="presentation"> -->
+	</div> <!-- end of id="presentation"> -->
 	
-<ul class="weighted" style="font-size: 100%" id="weightTags">
+	<ul class="weighted" style="font-size: 100%" id="weightTags">
 		<li><a href="sierpinski.html" class="green huge">Sierpinski</a></li>
 		<li><a href="Newton's_Cannon.html" class="purple huge" style="font-family:Cambria, 'Hoefler Text', 'Nimbus Roman *No9 L Regular', Times, 'Times New Roman', serif;">Newton's Cannon</a></li>
 		<li><a href="gosper.html" class="green small">Gosper</a></li>	
@@ -450,11 +445,11 @@ var Lcanvas = document.getElementById("lateralCanvas");
     <!-------IMAGE GALLERY ---------------------------->
     <!-------------------------------------------------> 
 	<br>
-	<div>
-    <div id="my_flex_container" class="my_flex_parent" style="padding-top:3em; clear:both"> 
-      
-		  <!-- Here goes the thumbimages of the projects -->
-               
+
+   
+         <div id="my_flex_container" class="my_flex_parent" style="padding-top:3em; clear:both"> 
+	 <!-- Here go the thumbimages of the projects -->
+        
 	      <div class="column">
 		      
 			<div class="mi_marco">
@@ -466,9 +461,7 @@ var Lcanvas = document.getElementById("lateralCanvas");
 			 </figcaption>
 			</figure>
 			</a>
-			</div>	  
-	    
-
+			</div>	 
 
 			<div class="mi_marco">
 			<a href="bioengineering.html" target="_self">
@@ -481,8 +474,6 @@ var Lcanvas = document.getElementById("lateralCanvas");
 			</a>
 			</div>
 
-
-
 			<div class="mi_marco">
 			<a href="lorenz.html" target="_self">
 			<figure>
@@ -493,7 +484,6 @@ var Lcanvas = document.getElementById("lateralCanvas");
 			</figure>
 			</a>
 			</div>
-
 
 			<div class="mi_marco">
 			<a href="DLA.html" target="_self">
@@ -544,8 +534,6 @@ var Lcanvas = document.getElementById("lateralCanvas");
 			</a>
 			</div>
 
-
-
 			<div class="mi_marco">
 			<a href="julia.html" target="_self">
 			<figure>
@@ -556,7 +544,6 @@ var Lcanvas = document.getElementById("lateralCanvas");
 			</figure>
 			</a>
 			</div>
-
 
 			<div class="mi_marco">
 			<a href="koch.html" target="_self">
@@ -573,7 +560,6 @@ var Lcanvas = document.getElementById("lateralCanvas");
 
 	       <div class="column">
 		       
-		       
 			<div class="mi_marco">
 			<a href="Matching_game.html" target="_self">
 			<figure>
@@ -584,7 +570,6 @@ var Lcanvas = document.getElementById("lateralCanvas");
 			</figure>
 			</a>
 			</div>
-
 
 			<div class="mi_marco">
 			<a href="iterative_functions.html" target="_self">
@@ -597,7 +582,6 @@ var Lcanvas = document.getElementById("lateralCanvas");
 			</a>
 			</div>
 
-
 			<div class="mi_marco">
 			<a href="tree.html" target="_self">
 			<figure>
@@ -609,15 +593,9 @@ var Lcanvas = document.getElementById("lateralCanvas");
 			</a>
 			</div> 
 		       
-		       
                </div>    <!-- end column -->
 
-	 
-	    
-    </div>
-    </div>
-    </div>
-  
+    </div>   <!-- end of the flex container id="my_flex_container"-->
 	
 	
 	</div> <!--end div main -->
