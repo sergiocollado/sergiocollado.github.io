@@ -18,6 +18,24 @@ my_body{
 	position:absolute;
 }
 
+my_main{
+	margin:auto;
+	padding:0px;
+	padding-left:2%;
+	border-width: 1px;
+	border-left-style: solid;
+	border-left-width:1px;
+	border-style: none;
+	border-left: solid;
+	border-color:white;
+	padding-right:0%;
+	padding-bottom:0px;
+	border-bottom:0px;
+	border-left: 1px solid white;
+	width:auto;
+	max-width:75%;
+}
+
 
 .icon-bar {
   position: fixed;
@@ -26,7 +44,7 @@ my_body{
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
+}Ee
 
 .icon-bar a {
   display: block;
