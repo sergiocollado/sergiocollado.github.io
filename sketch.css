@@ -433,48 +433,33 @@ align-content: flex-start;
 
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-/* Styles */
-
-  .column {
-    flex: 95%;
-    max-width: 95%;
-  }
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
   .column {
     flex: 95%;
     max-width: 95%;
   }
-  .notinsmall {
+.notinsmall {
 	display: none;
   }
 }
+
 
 /* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
+@media only screen and (max-width : 320px) {
 /* Styles */
   .column {
     flex: 95%;
     max-width: 95%;
   }
-    .notinsmall {
+   .notinsmall {
 	display: none;
   }
 }
 
-/* Tablets (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
 
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 /* Styles */
   .column {
     flex: 50%;
@@ -483,12 +468,8 @@ and (max-device-width : 1024px) {
 }
 
 /* Tablets (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 /* Styles */
-
   .column {
     flex: 50%;
     max-width: 50%;
@@ -496,12 +477,8 @@ and (orientation : landscape) {
 }
 
 /* Tablets (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 /* Styles */
-
   .column {
     flex: 50%;
     max-width: 50%;
@@ -512,21 +489,17 @@ and (orientation : portrait) {
 }
 
 /* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
+@media only screen and (min-width : 1224px) {
 /* Styles */
 }
 
 /* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
+@media only screen and (min-width : 1824px) {
 /* Styles */
 }
 
 /* iPhones----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5) and (min-device-pixel-ratio : 1.5) {
 /* Styles */
 
   .column {
