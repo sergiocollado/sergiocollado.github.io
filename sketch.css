@@ -238,18 +238,18 @@ a.blue { color: rgb(88,138,231)}
     transition: 0.5s;
     padding-top: 60px;
 	
-	 background-color:rgb(88,138,231);
-	 font-size:large; 
-	 font-weight:bold;
-	 font-style:italic; 
-	 color:#f0f0f0;
-	 border-style:solid;
-	 border-color:white;
-	 border-width:5px;
-	 background-image: linear-gradient(to bottom,rgb(88,138,255),rgb(221,243,255) 61%, rgb(88,138,255));
-	 -webkit-box-shadow: 6px 6px 5px #ccc;
-	-moz-box-shadow: 6px 6px 5px #ccc;
-	box-shadow: 6px 6px 5px #ccc;
+    background-color:rgb(88,138,231);
+    font-size:large; 
+    font-weight:bold;
+    font-style:italic; 
+    color:#f0f0f0;
+    border-style:solid;
+    border-color:white;
+    border-width:5px;
+    background-image: linear-gradient(to bottom,rgb(88,138,255),rgb(221,243,255) 61%, rgb(88,138,255));
+    -webkit-box-shadow: 6px 6px 5px #ccc;
+    -moz-box-shadow: 6px 6px 5px #ccc;
+    box-shadow: 6px 6px 5px #ccc;
 }
 
 .sidenav a {
@@ -277,7 +277,6 @@ a.blue { color: rgb(88,138,231)}
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
 
 
 .sidenav {
@@ -386,29 +385,29 @@ max-width:95%;
 
 
 .mi_marco{
-max-width:47%;
-border-color: white;
-border-display: solid;
-border-width:0px;
-border-radius:1em;
-padding:0.1em;
-/*padding-bottom:2em;*/
-margin:0.3em;
-/*max-height:attr(width)px;*/
-/*max-width:40%;*/
--moz-box-shadow: 6px 6px 5px #ccc;
-box-shadow: 6px 6px 5px #ccc;
-box-sizing: border-box;
+	max-width:47%;
+	border-color: white;
+	border-display: solid;
+	border-width:0px;
+	border-radius:1em;
+	padding:0.1em;
+	/*padding-bottom:2em;*/
+	margin:0.3em;
+	/*max-height:attr(width)px;*/
+	/*max-width:40%;*/
+	-moz-box-shadow: 6px 6px 5px #ccc;
+	box-shadow: 6px 6px 5px #ccc;
+	box-sizing: border-box;
 }
 
 
 .my_flex_parent {
-display:flex;
-flex-direction:row;
-flex-wrap:wrap;	
-justify-content:space-around;
-align-items: center;
-align-content: flex-start;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;	
+	justify-content:space-around;
+	align-items: center;
+	align-content: flex-start;
 }
 
 
@@ -423,8 +422,8 @@ align-content: flex-start;
 
 /* Gradient style */
 .blue-green-grad {
-	background: blue; /* fallback for browsers that do not support gradients */   
-	background: linear-gradient(-45deg, #99ffdd,#99ccff); /* Standard syntax (must be last) */	
+    background: blue; /* fallback for browsers that do not support gradients */   
+    background: linear-gradient(-45deg, #99ffdd,#99ccff); /* Standard syntax (must be last) */	
     background: -webkit-linear-gradient(-35deg, rgb(221,243,255),#99ccff,#99ccff, #99ffdd, #99ffdd, rgb(221,243,255),#dcf9a1);
     background: -o-linear-gradient(-45deg, #99ffdd,#99ccff, #99ffdd,  #e6ffb3); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(-45deg, #99ffdd,#99ccff, #99ffdd,  #e6ffb3); /* For Firefox 3.6 to 15 */
@@ -456,13 +455,25 @@ align-content: flex-start;
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
-  .column {
-    flex: 95%;
-    max-width: 95%;
-  }
 .notinsmall {
 	display: none;
   }
+ 
+	.mi_marco{
+		max-width:95%;
+		border-color: blue;
+		border-display: solid;
+		border-width:2px;
+		border-radius:1em;
+		padding:0.1em;
+		/*padding-bottom:2em;*/
+		margin:0.3em;
+		/*max-height:attr(width)px;*/
+		/*max-width:40%;*/
+		-moz-box-shadow: 6px 6px 5px #ccc;
+		box-shadow: 6px 6px 5px #ccc;
+		box-sizing: border-box;
+	}
 }
 
 
@@ -476,6 +487,22 @@ align-content: flex-start;
    .notinsmall {
 	display: none;
   }
+ 
+	.mi_marco{
+		max-width:95%;
+		border-color: orange;
+		border-display: solid;
+		border-width:3px;
+		border-radius:1em;
+		padding:0.1em;
+		/*padding-bottom:2em;*/
+		margin:0.3em;
+		/*max-height:attr(width)px;*/
+		/*max-width:40%;*/
+		-moz-box-shadow: 6px 6px 5px #ccc;
+		box-shadow: 6px 6px 5px #ccc;
+		box-sizing: border-box;
+	}
 }
 
 
@@ -486,15 +513,41 @@ align-content: flex-start;
     flex: 50%;
     max-width: 50%;
   }
+	.mi_marco{
+		max-width:95%;
+		border-color: yellow;
+		border-display: solid;
+		border-width:5px;
+		border-radius:1em;
+		padding:0.1em;
+		/*padding-bottom:2em;*/
+		margin:0.3em;
+		/*max-height:attr(width)px;*/
+		/*max-width:40%;*/
+		-moz-box-shadow: 6px 6px 5px #ccc;
+		box-shadow: 6px 6px 5px #ccc;
+		box-sizing: border-box;
+	}
 }
 
 /* Tablets (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 /* Styles */
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
+	.mi_marco{
+		max-width:95%;
+		border-color: green;
+		border-display: solid;
+		border-width:4px;
+		border-radius:1em;
+		padding:0.1em;
+		/*padding-bottom:2em;*/
+		margin:0.3em;
+		/*max-height:attr(width)px;*/
+		/*max-width:40%;*/
+		-moz-box-shadow: 6px 6px 5px #ccc;
+		box-shadow: 6px 6px 5px #ccc;
+		box-sizing: border-box;
+	}
 }
 
 /* Tablets (portrait) ----------- */
