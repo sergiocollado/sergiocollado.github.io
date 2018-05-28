@@ -9,12 +9,10 @@ window.onload = function() {
 		draw();
 		
 		document.body.addEventListener("mousedown",
-			function(event){
-				maxDepth += 1;
-				if(maxDepth==7)
-				{maxDepth = 0;}
-				draw();
-			});
+			 increase_level());
+		document.body.addEventListener("ontouchend",
+			 increase_level());
+		
 		document.body.addEventListener("keyup",
 		function(event) {
 			console.log(event.keyCode);
@@ -26,16 +24,19 @@ window.onload = function() {
 				draw();
 				break;
 				
-				case 80: //p 
-				chaos.popImage();
-				break;
-				
 				default:
 				break;
 				
 			}
 	});
 	
+	}
+	
+	function increase_level(){
+				maxDepth += 1;
+				if(maxDepth==7)
+				{maxDepth = 0;}
+				draw();
 	}
 	
 	function draw() {
