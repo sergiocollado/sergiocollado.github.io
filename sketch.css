@@ -517,7 +517,7 @@ max-width:95%;
     max-width: 50%;
   }
 	.mi_marco{
-		max-width:95%;
+		max-width:45%;
 		border-color: yellow;
 		border-display: solid;
 		border-width:5px;
@@ -542,7 +542,7 @@ max-width:95%;
     max-width: 29%;
   }
 .mi_marco{
-	max-width:95%;
+	max-width:27%;
 	border-color: green;
 	border-display: solid;
 	border-width: 5px;
