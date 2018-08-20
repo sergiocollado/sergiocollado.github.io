@@ -453,14 +453,15 @@ max-width:95%;
 /*ref: https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery **/
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {*/
+@media only screen and (max-device-width : 768px) {
 /* Styles */
 .notinsmall {
 	display: none;
   }
    .column {
-    flex: 75%;
-    max-width: 75%;
+    flex: 80%;
+    max-width: 80%;
   }
 .mi_marco{
 	max-width:95%;
@@ -477,12 +478,14 @@ max-width:95%;
 	box-shadow: 6px 6px 5px #ccc;
 	box-sizing: border-box;
    }
+ .body{
+ 	background-color:"lightblue";	 
+  }
 }
 
 
-/* Smartphones (portrait) ----------- */
+/* Smartphones (portrait) -----------
 @media only screen and (max-width : 320px) {
-/* Styles */
   .column {
     flex: 95%;
     max-width: 95%;
@@ -498,15 +501,12 @@ max-width:95%;
 		border-width: 6px;
 		border-radius:1em;
 		padding:0.1em;
-		/*padding-bottom:2em;*/
 		margin:0.3em;
-		/*max-height:attr(width)px;*/
-		/*max-width:40%;*/
 		-moz-box-shadow: 6px 6px 5px #ccc;
 		box-shadow: 6px 6px 5px #ccc;
 		box-sizing: border-box;
 	}
-}
+} */
 
 
 /* Tablets (portrait and landscape) ----------- */
@@ -534,7 +534,8 @@ max-width:95%;
 }
 
 /* Tablets (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {*/
+@media only screen and (min-device-width : 1024px)  {	
 /* Styles */
 .column {
     flex: 30%;
@@ -557,9 +558,8 @@ max-width:95%;
    }
 }
 
-/* Tablets (portrait) ----------- */
+/* Tablets (portrait) ----------- 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
   .column {
     flex: 50%;
     max-width: 50%;
@@ -567,9 +567,9 @@ max-width:95%;
    .notinsmall {
 	display: none;
   }
-}
+}*/
 
-/* Desktops and laptops -----------*/
+/* Desktops and laptops -----------
 @media only screen and (min-width : 1224px) {
   .column {
     flex: 32%;
@@ -578,7 +578,7 @@ max-width:95%;
    .notinsmall {
 	display: none;
   }
-} 
+} */
 
 
 /* iPhones----------- */
