@@ -452,10 +452,21 @@ max-width:95%;
 /*MEDIA QUERIES*/
 /*ref: https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery **/
 
-/* Smartphones (portrait and landscape) ----------- */
-/*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {*/
-@media only screen and (max-device-width : 768px) {
-/* Styles */
+
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+
+	   .column {
+    flex: 45%;
+    max-width: 45%;
+  }
+	
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+
 .notinsmall {
 	display: none;
   }
@@ -478,119 +489,8 @@ max-width:95%;
 	box-shadow: 6px 6px 5px #ccc;
 	box-sizing: border-box;
    }
- .body{
- 	background-color:"lightblue";	 
-  }
+ body{
+ 	background-color:"ligthblue";	 
+  }	
+	
 }
-
-
-/* Smartphones (portrait) -----------
-@media only screen and (max-width : 320px) {
-  .column {
-    flex: 95%;
-    max-width: 95%;
-  }
-   .notinsmall {
-	display: none;
-  }
- 
-	.mi_marco{
-		max-width:95%;
-		border-color: orange;
-		border-display: solid;
-		border-width: 6px;
-		border-radius:1em;
-		padding:0.1em;
-		margin:0.3em;
-		-moz-box-shadow: 6px 6px 5px #ccc;
-		box-shadow: 6px 6px 5px #ccc;
-		box-sizing: border-box;
-	}
-} */
-
-
-/* Tablets (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-	.mi_marco{
-		max-width:45%;
-		border-color: yellow;
-		border-display: solid;
-		border-width:5px;
-		border-radius:1em;
-		padding:0.1em;
-		/*padding-bottom:2em;*/
-		margin:0.3em;
-		/*max-height:attr(width)px;*/
-		/*max-width:40%;*/
-		-moz-box-shadow: 6px 6px 5px #ccc;
-		box-shadow: 6px 6px 5px #ccc;
-		box-sizing: border-box;
-	}
-}
-
-/* Tablets (landscape) ----------- */
-/*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {*/
-@media only screen and (min-device-width : 1024px)  {	
-/* Styles */
-.column {
-    flex: 30%;
-    max-width: 29%;
-  }
-.mi_marco{
-	max-width:27%;
-	border-color: green;
-	border-display: solid;
-	border-width: 5px;
-	border-radius:1em;
-	padding:0.1em;
-	/*padding-bottom:2em;*/
-	margin:0.3em;
-	/*max-height:attr(width)px;*/
-	/*max-width:40%;*/
-	-moz-box-shadow: 6px 6px 5px #ccc;
-	box-shadow: 6px 6px 5px #ccc;
-	box-sizing: border-box;
-   }
-}
-
-/* Tablets (portrait) ----------- 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-   .notinsmall {
-	display: none;
-  }
-}*/
-
-/* Desktops and laptops -----------
-@media only screen and (min-width : 1224px) {
-  .column {
-    flex: 32%;
-    max-width: 30%;
-  }
-   .notinsmall {
-	display: none;
-  }
-} */
-
-
-/* iPhones----------- */
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5) and (min-device-pixel-ratio : 1.5) {
-/* Styles */
-
-  .column {
-    flex: 95%;
-    max-width: 95%;
-  }
-      .notinsmall {
-	display: none;
-  }
-}
-
