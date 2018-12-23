@@ -31,6 +31,8 @@ window.onload = function () {
 		renderFull();
 		
 		document.body.addEventListener("mousedown", onMouseDown);
+		document.body..addEventListener("touchstart", onMouseDown);
+		
 		
 		document.body.addEventListener("keyup",
 		function(event) {
@@ -162,6 +164,9 @@ window.onload = function () {
 		zoomDiv.style.top=zoomY+"px";
 		document.body.addEventListener("mousemove", onMouseMove);
 		document.body.addEventListener("mouseup", onMouseUp);
+		document.body.addEventListener("touchmove", onMouseMove);
+		document.body.addEventListener("touchend", onMouseUp);
+		
 	}
 	
 	
@@ -173,7 +178,7 @@ window.onload = function () {
 	
 	function onMouseUp(event){
 		var x=event.clientX,
-		y=event.clientY;
+		var y=event.clientY;
 		
 		console.log( "x=" + x);
 		console.log( "y=" + y);
