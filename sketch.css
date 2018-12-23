@@ -44,7 +44,7 @@ my_main{
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}Ee
+}
 
 .icon-bar a {
   display: block;
@@ -275,7 +275,7 @@ a.blue { color: rgb(88,138,231)}
     margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 550px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
@@ -450,11 +450,8 @@ max-width:95%;
   vertical-align: middle;
 }
 
-
 /*MEDIA QUERIES*/
 /*ref: https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery **/
-
-
 
 /* If the screen size is 601px or more, set the font-size of <div> to 80px */
 @media only screen and (min-width: 601px) {
@@ -466,8 +463,8 @@ max-width:95%;
 	
 }
 
-/* If the screen size is 600px or less, set the font-size of <div> to 30px */
-@media only screen and (max-width: 600px) {
+/* If the screen size is 750px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 750px) {
 
 .notinsmall {
 	display: none;
