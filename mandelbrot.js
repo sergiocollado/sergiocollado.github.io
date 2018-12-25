@@ -31,8 +31,7 @@ window.onload = function () {
 		renderFull();
 		
 		document.body.addEventListener("mousedown", onMouseDown);
-		document.body..addEventListener("touchstart", onMouseDown);
-		
+		document.body.addEventListener("touchstart", onMouseDown);
 		
 		document.body.addEventListener("keyup",
 		function(event) {
