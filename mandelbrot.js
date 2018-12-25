@@ -176,7 +176,7 @@ window.onload = function () {
 	}
 	
 	function onMouseUp(event){
-		var x=event.clientX,
+		var x=event.clientX;
 		var y=event.clientY;
 		
 		console.log( "x=" + x);
