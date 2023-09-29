@@ -1,7 +1,7 @@
 
 # sergiocollado.github.io
 
-this is the web site - Sergio González Collado
+This is the web site - Sergio González Collado
 
 the web address is: http://sergiocollado.github.io
 
